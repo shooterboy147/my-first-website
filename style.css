@@ -1,253 +1,98 @@
 /* Global Styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Arial', sans-serif;
-}
-
-/* Body */
 body {
-  background-color: #f7f7f7;
-  color: #333;
-  line-height: 1.6;
-  font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
 }
 
-/* Header Section */
+h1, h2, h3 {
+    font-family: 'Verdana', sans-serif;
+}
+
+/* Header Styles */
 header {
-  background-color: #222;
-  color: white;
-  padding: 20px;
-  text-align: center;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
 }
 
 header h1 {
-  font-size: 48px;
-  font-weight: bold;
+    font-size: 36px;
 }
 
-/* Navigation Bar */
+/* Navigation Styles */
 nav {
-  background-color: #333;
-  text-align: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px 20px;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18px;
 }
 
-nav ul li {
-  display: inline-block;
-  margin: 0 20px;
+nav a:hover {
+    background-color: #555;
 }
 
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
-  padding: 10px 20px;
-  display: inline-block;
+/* Main Section */
+main {
+    padding: 40px 20px;
+    text-align: center;
 }
 
-nav ul li a:hover {
-  background-color: #f7c800;
-  border-radius: 5px;
+.section {
+    margin-bottom: 40px;
 }
 
-/* Hero Section */
-.hero {
-  background-color: #f7c800;
-  color: #222;
-  padding: 50px 20px;
-  text-align: center;
+.section h2 {
+    font-size: 28px;
+    color: #333;
 }
 
-.hero h2 {
-  font-size: 36px;
-  font-weight: bold;
-}
-
-.hero p {
-  font-size: 20px;
-  margin-top: 20px;
-}
-
-/* About Us Section */
-#about-us {
-  background-color: #222;
-  color: #fff;
-  padding: 40px 20px;
-  text-align: center;
-}
-
-#about-us h2 {
-  font-size: 36px;
-  font-weight: bold;
-}
-
-#about-us p {
-  font-size: 18px;
-  margin-top: 20px;
-}
-
-/* What Our Users Say Section */
-#testimonials {
-  background-color: #fff;
-  color: #333;
-  padding: 40px 20px;
-  text-align: center;
-}
-
-#testimonials h2 {
-  font-size: 36px;
-  font-weight: bold;
-}
-
-#testimonials .testimonial {
-  margin-top: 20px;
-}
-
-#testimonials p {
-  font-size: 18px;
-  color: #666;
-}
-
-#testimonials .testimonial img {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
-
-/* Contact Us Section */
-#contact-us {
-  background-color: #f7c800;
-  color: #222;
-  padding: 40px 20px;
-  text-align: center;
-}
-
-#contact-us h2 {
-  font-size: 36px;
-  font-weight: bold;
-}
-
-#contact-us p {
-  font-size: 18px;
-  margin-top: 20px;
+.section p {
+    font-size: 18px;
+    color: #666;
 }
 
 /* Contact Form */
 form {
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-form input, form textarea {
-  padding: 10px;
-  margin: 10px;
-  width: 80%;
-  border: 2px solid #333;
-  border-radius: 5px;
-}
-
-form button {
-  background-color: #333;
-  color: #fff;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-form button:hover {
-  background-color: #444;
-}
-
-/* Funds Section */
-#funds-section {
-  background-color: #f7c800;
-  color: #333;
-  padding: 40px 20px;
-  text-align: center;
-}
-
-#funds-section h2 {
-  font-size: 36px;
-  font-weight: bold;
-  color: #000;
-}
-
-#funds-section p {
-  font-size: 18px;
-  color: #444;
-  margin-top: 20px;
-}
-
-#funds-section a {
-  background-color: #000;
-  color: #fff;
-  padding: 12px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  margin-top: 20px;
-  display: inline-block;
-}
-
-#funds-section a:hover {
-  background-color: #444;
-  color: #fff;
-}
-
-/* Footer Section */
-footer {
-  background-color: #222;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
-
-footer p {
-  font-size: 14px;
-}
-
-/* Media Queries */
-@media (max-width: 768px) {
-  nav ul {
-    text-align: center;
-  }
-
-  nav ul li {
-    display: block;
-    margin-bottom: 10px;
-  }
-
-  .hero h2 {
-    font-size: 28px;
-  }
-
-  .hero p {
-    font-size: 16px;
-  }
-
-  #about-us h2,
-  #testimonials h2,
-  #contact-us h2,
-  #funds-section h2 {
-    font-size: 30px;
-  }
-
-  #testimonials .testimonial {
     display: flex;
     flex-direction: column;
-    align-items: center;
-  }
+    width: 300px;
+    margin: 0 auto;
+}
 
-  form input, form textarea {
-    width: 100%;
-  }
+input[type="text"], input[type="email"], textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
 }
