@@ -1,64 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bitcoin Investment</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bitcoin Investments</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <header>
-    <h1>Bitcoin Investment</h1>
-    <nav class="navbar">
-      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
+    <h1>Bitcoin Investments</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section id="hero">
-      <h2>Invest Smart. Trade Bitcoin.</h2>
+    <section class="hero">
+      <h2>Invest Smart, Trade Bitcoin</h2>
       <p>Your trusted gateway into crypto trading and investments.</p>
     </section>
 
-    <section id="about">
+    <section class="about">
       <h2>About Us</h2>
       <p>We help newcomers and investors understand Bitcoin trading strategies and risk management. Our goal is to build the future of finance, one smart trade at a time.</p>
     </section>
 
-    <section id="contact">
+    <section class="contact">
       <h2>Contact Us</h2>
       <form>
-        <label for="name">Your Name</label>
-        <input type="text" id="name" name="name" required />
-
-        <label for="email">Your Email</label>
-        <input type="email" id="email" name="email" required />
-
-        <label for="message">Your Message</label>
-        <textarea id="message" name="message" required></textarea>
-
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
         <button type="submit">Send</button>
       </form>
     </section>
   </main>
-
-  <footer>
-    <p>&copy; 2025 Bitcoin Investment. All rights reserved.</p>
-  </footer>
-
-  <script>
-    const toggle = document.getElementById('menu-toggle');
-    const links = document.getElementById('nav-links');
-
-    toggle.addEventListener('click', () => {
-      links.classList.toggle('active');
-    });
-  </script>
 </body>
 </html>
