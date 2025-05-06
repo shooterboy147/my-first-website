@@ -3,50 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bitcoin Investments</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Add link to Font Awesome for icons (if you want to use them) -->
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bitcoin Investment Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navbar -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Invest Smart</a></li>
-                <li><a href="#">Trade Bitcoin</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Hero Section (Above the Fold) -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Maximize Your Bitcoin Investments with Confidence</h1>
+            <p>Whether you’re new to Bitcoin or a seasoned investor, we offer strategies tailored to your financial goals and risk tolerance.</p>
+            <a href="#investment-options" class="cta-button">Start Investing Today</a>
+        </div>
+    </section>
 
-    <!-- Main Content -->
-    <main>
-        <section id="about">
-            <h1>Invest Smart. Trade Bitcoin.</h1>
-            <p>Your trusted gateway into crypto trading and investments. We help newcomers and investors understand Bitcoin trading strategies and risk management. Our goal is to build the future of finance, one smart trade at a time.</p>
-        </section>
+    <!-- About Us Section -->
+    <section class="about-us">
+        <h2>About Us</h2>
+        <p>At Bitcoin Investments, our mission is to make Bitcoin investment accessible to everyone. We believe anyone can succeed in cryptocurrency with the right tools and guidance. Our platform offers personalized investment strategies, educational resources, and real-time market analysis to help you grow your wealth safely and effectively.</p>
+        <p>We set ourselves apart with tailored strategies, a simple user interface, and top-notch security to ensure your investments are in good hands.</p>
+    </section>
 
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <form action="https://formspree.io/f/meoggbap" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required />
-                <input type="email" name="email" placeholder="Your Email" required />
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </section>
-    </main>
+    <!-- Investment Options Section -->
+    <section class="investment-options">
+        <h2>Investment Options</h2>
+        <p>We offer several tailored investment strategies to suit your goals:</p>
+        <ul>
+            <li><strong>Short-Term Bitcoin Trading:</strong> Ideal for those looking for quick profits with market fluctuations.</li>
+            <li><strong>Long-Term Hold:</strong> For those who believe in the future growth of Bitcoin and want to hold for long-term gains.</li>
+            <li><strong>Portfolio Diversification:</strong> We offer custom portfolios to help reduce risk and increase long-term returns.</li>
+        </ul>
+        <p>With each option, we provide expert advice, risk analysis, and market insights to ensure your investment aligns with your financial goals.</p>
+    </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Bitcoin Investments. All rights reserved.</p>
-    </footer>
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>What Our Users Say</h2>
+        <blockquote>
+            <p>"I started investing with Bitcoin Investments just a few months ago, and I've already seen significant returns. The platform is so easy to use, and I feel confident in my investment decisions!"</p>
+            <footer>- Jane Doe, Bitcoin Investor</footer>
+        </blockquote>
+    </section>
 
-    <!-- Scripts (if needed) -->
-    <script>
-        // Add any additional JavaScript here if required
-    </script>
+    <!-- Call to Action Section -->
+    <section class="cta">
+        <h2>Ready to Start Investing in Bitcoin?</h2>
+        <p>Join us today and begin your journey toward smarter Bitcoin investments. Our platform is easy to use, secure, and designed to help you succeed.</p>
+        <a href="#signup" class="cta-button">Start Now</a>
+    </section>
+
+    <!-- Blog Section (Optional for Education) -->
+    <section class="blog">
+        <h2>Latest Bitcoin Investment Tips</h2>
+        <article>
+            <h3>How to Choose the Right Bitcoin Investment Strategy</h3>
+            <p>Choosing the right strategy is crucial for success. Learn more about different approaches to Bitcoin investing.</p>
+            <a href="blog-post-link">Read More</a>
+        </article>
+    </section>
+
+    <!-- Contact Us Section (Footer) -->
+    <section class="contact-us">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or would like to know more about our investment strategies, feel free to reach out to us.</p>
+        <form action="https://formspree.io/f/meoggbap" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
 </body>
 </html>
