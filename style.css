@@ -1,8 +1,10 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
@@ -14,6 +16,11 @@ header {
 
 header h1 {
     margin: 0;
+    font-size: 2em;
+}
+
+header p {
+    font-size: 1.2em;
 }
 
 main {
@@ -32,10 +39,11 @@ main {
 h2 {
     text-align: center;
     color: #333;
+    font-size: 1.8em;
 }
 
 .step {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .step h3 {
@@ -48,7 +56,7 @@ button {
     color: white;
     border: none;
     padding: 10px 20px;
-    font-size: 1em;
+    font-size: 1.1em;
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s;
@@ -61,7 +69,7 @@ button:hover {
 .qr-code {
     display: block;
     margin: 0 auto;
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     border-radius: 8px;
 }
@@ -77,4 +85,8 @@ footer {
 footer a {
     color: #f5a623;
     text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
