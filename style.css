@@ -1,118 +1,80 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
-  margin: 0;
-  background-color: #000;
-  color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
 
 header {
-  background-color: #111;
-  padding: 20px;
-  text-align: center;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
 
 header h1 {
-  margin: 0;
-  color: #FFD700;
+    margin: 0;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+main {
+    padding: 20px;
 }
 
-nav a {
-  text-decoration: none;
-  color: #FFD700;
-  font-weight: bold;
+#how-to-invest {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-#invest {
-  padding: 50px 20px;
-  text-align: center;
+h2 {
+    text-align: center;
+    color: #333;
 }
 
-#invest h2 {
-  color: #FFD700;
-  font-size: 2em;
+.step {
+    margin-bottom: 20px;
 }
 
-.wallet-box {
-  background-color: #222;
-  padding: 20px;
-  margin-top: 20px;
-  border-radius: 10px;
-  display: inline-block;
+.step h3 {
+    font-size: 1.5em;
+    color: #555;
 }
 
-#wallet-address {
-  font-size: 1rem;
-  margin: 10px 0;
-  color: #0ff;
-  word-wrap: break-word;
+button {
+    background-color: #f5a623;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
-.wallet-box button {
-  padding: 10px 20px;
-  background-color: #FFD700;
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
+button:hover {
+    background-color: #d98e1b;
 }
 
-.qr-section {
-  margin-top: 40px;
-}
-
-.qr-section img {
-  width: 180px;
-  height: 180px;
-  border: 2px solid #FFD700;
-  border-radius: 10px;
-}
-
-.qr-section p {
-  margin-top: 10px;
-  color: #bbb;
-}
-
-.how-to-invest {
-  text-align: left;
-  max-width: 600px;
-  margin: 40px auto;
-}
-
-.how-to-invest h3 {
-  color: #FFD700;
-}
-
-.how-to-invest ol {
-  line-height: 1.8;
-  padding-left: 20px;
-}
-
-#contact {
-  padding: 40px 20px;
-  text-align: center;
-  background-color: #111;
-}
-
-#contact h2 {
-  color: #FFD700;
-}
-
-#contact a {
-  color: #0ff;
-  text-decoration: none;
+.qr-code {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 
 footer {
-  background-color: #000;
-  text-align: center;
-  padding: 15px;
-  color: #555;
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+footer a {
+    color: #f5a623;
+    text-decoration: none;
 }
