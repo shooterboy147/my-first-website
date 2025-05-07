@@ -1,67 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Bitcoin Secure</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin Secure - How to Invest</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <header>
-    <h1>Bitcoin Secure</h1>
-    <nav>
-      <ul>
-        <li><a href="#invest">Invest</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section id="invest">
-    <h2>Invest in Bitcoin Secure</h2>
-    <p>Send your USDT (TRC20) to the wallet below</p>
-
-    <div class="wallet-box">
-      <strong>Wallet Address:</strong>
-      <p id="wallet-address">TWXmDAaAugAMXdrUzQSRSyvED5yptHNnDh</p>
-      <button onclick="copyWallet()">Copy Wallet</button>
-    </div>
-
-    <div class="qr-section">
-      <img src="usdt_trc20_wallet_qr.png" alt="Wallet QR Code">
-      <p>Scan to invest using your crypto wallet</p>
-    </div>
-
-    <div class="how-to-invest">
-      <h3>How to Invest</h3>
-      <ol>
-        <li>Open your crypto wallet app (e.g. Bybit, Trust Wallet, Binance).</li>
-        <li>Select <strong>USDT</strong> on <strong>TRC20</strong> network.</li>
-        <li>Scan the QR code or paste the wallet address above.</li>
-        <li>Enter amount to invest and confirm transaction.</li>
-        <li>Wait for confirmation. We'll process your investment quickly.</li>
-      </ol>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: <a href="mailto:bitcoinsecure0@gmail.com">bitcoinsecure0@gmail.com</a></p>
-    <p>Telegram: <a href="https://t.me/bitcoinsecure0" target="_blank">@bitcoinsecure0</a></p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Bitcoin Secure. All rights reserved.</p>
-  </footer>
-
-  <script>
-    function copyWallet() {
-      const wallet = document.getElementById("wallet-address").textContent;
-      navigator.clipboard.writeText(wallet).then(() => {
-        alert("Wallet address copied to clipboard!");
-      });
-    }
-  </script>
-
+    <header>
+        <h1>Welcome to Bitcoin Secure</h1>
+        <p>Invest securely in Bitcoin using our trusted platform.</p>
+    </header>
+    <main>
+        <section id="how-to-invest">
+            <h2>How to Invest</h2>
+            <div class="step">
+                <h3>Step 1: Copy Our USDT TRC20 Wallet Address</h3>
+                <p>Click the button below to copy our wallet address for USDT TRC20 transactions.</p>
+                <button id="copy-wallet" onclick="copyWallet()">Copy Wallet Address</button>
+                <p id="wallet-message"></p>
+            </div>
+            <div class="step">
+                <h3>Step 2: Scan the QR Code</h3>
+                <p>Use the QR code below to send USDT TRC20 to our wallet:</p>
+                <img src="https://github.com/Shooterboy147/my-first-website/blob/main/usdt_trc20_wallet_qr.png?raw=true" alt="USDT TRC20 Wallet QR Code" class="qr-code">
+            </div>
+            <div class="step">
+                <h3>Step 3: Confirm Your Transaction</h3>
+                <p>Once you've sent the funds, confirm your transaction by clicking the button below.</p>
+                <button>Confirm Transaction</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Contact us at <a href="mailto:bitcoinsecure0@gmail.com">bitcoinsecure0@gmail.com</a></p>
+    </footer>
+    <script>
+        function copyWallet() {
+            var walletAddress = "TWXmDAaAugAMXdrUzQSRSyvED5yptHNnDh";  // Replace with your wallet address
+            navigator.clipboard.writeText(walletAddress).then(function() {
+                document.getElementById("wallet-message").innerText = "Wallet Address Copied!";
+            }).catch(function(error) {
+                document.getElementById("wallet-message").innerText = "Failed to copy address.";
+            });
+        }
+    </script>
 </body>
 </html>
