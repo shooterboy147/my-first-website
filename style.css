@@ -1,117 +1,118 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   margin: 0;
-  background-color: #111;
-  color: #eee;
+  background-color: #000;
+  color: #fff;
 }
 
 header {
-  background-color: #222;
+  background-color: #111;
   padding: 20px;
   text-align: center;
 }
 
 header h1 {
   margin: 0;
-  font-size: 2em;
-  color: #f2a900;
+  color: #FFD700;
 }
 
 nav ul {
   list-style: none;
   padding: 0;
+  margin-top: 10px;
   display: flex;
   justify-content: center;
-  margin-top: 10px;
+  gap: 20px;
 }
 
-nav ul li {
-  margin: 0 15px;
-}
-
-nav ul li a {
-  color: #ccc;
+nav a {
   text-decoration: none;
+  color: #FFD700;
   font-weight: bold;
 }
 
-nav ul li a:hover {
-  color: #f2a900;
-}
-
-.hero {
+#invest {
+  padding: 50px 20px;
   text-align: center;
-  padding: 60px 20px;
-  background-color: #1c1c1c;
 }
 
-.hero h2 {
+#invest h2 {
+  color: #FFD700;
   font-size: 2em;
-  margin-bottom: 10px;
-  color: #f2a900;
 }
 
-.hero p {
-  font-size: 1.2em;
-}
-
-.btn {
-  background-color: #f2a900;
-  color: #000;
-  padding: 10px 20px;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
-  margin-top: 15px;
+.wallet-box {
+  background-color: #222;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
   display: inline-block;
 }
 
-.section {
+#wallet-address {
+  font-size: 1rem;
+  margin: 10px 0;
+  color: #0ff;
+  word-wrap: break-word;
+}
+
+.wallet-box button {
+  padding: 10px 20px;
+  background-color: #FFD700;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.qr-section {
+  margin-top: 40px;
+}
+
+.qr-section img {
+  width: 180px;
+  height: 180px;
+  border: 2px solid #FFD700;
+  border-radius: 10px;
+}
+
+.qr-section p {
+  margin-top: 10px;
+  color: #bbb;
+}
+
+.how-to-invest {
+  text-align: left;
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+.how-to-invest h3 {
+  color: #FFD700;
+}
+
+.how-to-invest ol {
+  line-height: 1.8;
+  padding-left: 20px;
+}
+
+#contact {
   padding: 40px 20px;
   text-align: center;
+  background-color: #111;
 }
 
-.wallet {
-  background-color: #181818;
+#contact h2 {
+  color: #FFD700;
 }
 
-.wallet-address {
-  font-size: 1.2em;
-  color: #f2f2f2;
-  margin-bottom: 10px;
-  word-break: break-all;
-}
-
-button {
-  padding: 10px 20px;
-  background-color: #f2a900;
-  color: #000;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.contact p {
-  font-size: 1.2em;
-  margin: 10px 0;
-}
-
-.contact a {
-  color: #f2a900;
+#contact a {
+  color: #0ff;
   text-decoration: none;
-  font-weight: bold;
-  font-size: 1.2em;
-}
-
-.contact a:hover {
-  text-decoration: underline;
 }
 
 footer {
-  background-color: #222;
-  color: #aaa;
+  background-color: #000;
   text-align: center;
-  padding: 20px;
-  margin-top: 20px;
+  padding: 15px;
+  color: #555;
 }
