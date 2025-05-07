@@ -1,68 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Bitcoin Investments</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bitcoin Investment</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <h1>Bitcoin Investments</h1>
-    </header>
-
-    <!-- Navigation Section -->
+  <header>
+    <h1>Bitcoin Invest Pro</h1>
     <nav>
-        <a href="#">Home</a>
-        <a href="#about">About Us</a>
-        <a href="#invest">Invest Smart</a>
-        <a href="#trade">Trade</a>
-        <a href="#contact">Contact Us</a>
+      <a href="#about">About</a>
+      <a href="#plans">Investment Plans</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
     </nav>
+  </header>
 
-    <!-- Main Section -->
-    <main>
-        <!-- About Us Section -->
-        <section id="about" class="section">
-            <h2>About Us</h2>
-            <p>We are dedicated to helping you navigate the world of Bitcoin investments and trading.</p>
-        </section>
+  <section class="hero">
+    <h2>Grow Your Wealth with Smart Bitcoin Investments</h2>
+    <p>Secure, trusted, and designed for beginners and pros alike.</p>
+    <a href="#contact" class="cta-button">Get Started</a>
+  </section>
 
-        <!-- Invest Smart Section -->
-        <section id="invest" class="section">
-            <h2>Invest Smart</h2>
-            <p>Learn how to invest in Bitcoin wisely with our expert insights and investment options.</p>
-        </section>
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We’re a passionate team committed to making Bitcoin investing simple and safe. With real-time insights and beginner-friendly tools, our platform is your gateway to crypto growth.</p>
+  </section>
 
-        <!-- Trade Section -->
-        <section id="trade" class="section">
-            <h2>Trade Bitcoin</h2>
-            <p>Start trading Bitcoin with ease and make smart trading decisions.</p>
-        </section>
+  <section id="plans">
+    <h2>Investment Options</h2>
+    <div class="plans">
+      <div class="plan">
+        <h3>Starter</h3>
+        <p>Invest from $50 - $499</p>
+        <p>Return: 10% weekly</p>
+      </div>
+      <div class="plan">
+        <h3>Pro</h3>
+        <p>Invest from $500 - $1,999</p>
+        <p>Return: 15% weekly</p>
+      </div>
+      <div class="plan">
+        <h3>Elite</h3>
+        <p>$2,000 and above</p>
+        <p>Return: 20% weekly</p>
+      </div>
+    </div>
+  </section>
 
-        <!-- Contact Us Section -->
-        <section id="contact" class="section">
-            <h2>Contact Us</h2>
-            <form action="https://formspree.io/f/meoggbap" method="POST">
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" required>
+  <section id="testimonials">
+    <h2>What Our Users Say</h2>
+    <div class="testimonial">
+      <p>"I started with just $100. In weeks, my returns doubled. Super impressed!"</p>
+      <strong>- Sandra M.</strong>
+    </div>
+    <div class="testimonial">
+      <p>"Honest platform. Smooth transactions. Transparent results."</p>
+      <strong>- Kelechi B.</strong>
+    </div>
+  </section>
 
-                <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" required>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/meoggbap" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
 
-                <label for="message">Your Message:</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <input type="submit" value="Send Message">
-            </form>
-        </section>
-    </main>
-
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2025 Bitcoin Investments. All rights reserved.</p>
-    </footer>
+  <footer>
+    <p>&copy; 2025 Bitcoin Invest Pro. All rights reserved.</p>
+  </footer>
 </body>
 </html>
