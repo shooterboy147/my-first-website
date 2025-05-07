@@ -1,46 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
   <title>Bitcoin Secure</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header>
     <h1>Bitcoin Secure</h1>
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#investment">Invest</a></li>
-        <li><a href="#wallet">Wallet</a></li>
+        <li><a href="#invest">Invest</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="hero">
-    <h2>Invest in Crypto Securely</h2>
-    <p>Your trusted platform for Bitcoin investments.</p>
-    <a href="#investment" class="btn">Get Started Now</a>
+  <section id="invest">
+    <h2>Invest in Bitcoin Secure</h2>
+    <p>Send your USDT (TRC20) to the wallet below</p>
+
+    <div class="wallet-box">
+      <strong>Wallet Address:</strong>
+      <p id="wallet-address">TWXmDAaAugAMXdrUzQSRSyvED5yptHNnDh</p>
+      <button onclick="copyWallet()">Copy Wallet</button>
+    </div>
+
+    <div class="qr-section">
+      <img src="usdt_trc20_wallet_qr.png" alt="Wallet QR Code">
+      <p>Scan to invest using your crypto wallet</p>
+    </div>
+
+    <div class="how-to-invest">
+      <h3>How to Invest</h3>
+      <ol>
+        <li>Open your crypto wallet app (e.g. Bybit, Trust Wallet, Binance).</li>
+        <li>Select <strong>USDT</strong> on <strong>TRC20</strong> network.</li>
+        <li>Scan the QR code or paste the wallet address above.</li>
+        <li>Enter amount to invest and confirm transaction.</li>
+        <li>Wait for confirmation. We'll process your investment quickly.</li>
+      </ol>
+    </div>
   </section>
 
-  <section id="investment" class="section">
-    <h2>Investment Plans</h2>
-    <ul>
-      <li>Starter Plan – 10% ROI in 7 Days</li>
-      <li>Pro Plan – 25% ROI in 14 Days</li>
-      <li>Elite Plan – 50% ROI in 30 Days</li>
-    </ul>
-  </section>
-
-  <section id="wallet" class="section wallet">
-    <h2>Send USDT (TRC20) to Invest</h2>
-    <p class="wallet-address" id="wallet-address">TWXmDAaAugAMXdrUzQSRSyvED5yptHNnDh</p>
-    <button onclick="copyWallet()">Copy Wallet Address</button>
-  </section>
-
-  <section id="contact" class="section contact">
+  <section id="contact">
     <h2>Contact Us</h2>
     <p>Email: <a href="mailto:bitcoinsecure0@gmail.com">bitcoinsecure0@gmail.com</a></p>
     <p>Telegram: <a href="https://t.me/bitcoinsecure0" target="_blank">@bitcoinsecure0</a></p>
@@ -52,11 +56,12 @@
 
   <script>
     function copyWallet() {
-      const wallet = document.getElementById("wallet-address").innerText;
+      const wallet = document.getElementById("wallet-address").textContent;
       navigator.clipboard.writeText(wallet).then(() => {
         alert("Wallet address copied to clipboard!");
       });
     }
   </script>
+
 </body>
 </html>
