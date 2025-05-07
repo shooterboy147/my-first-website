@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bitcoin Secure Investment</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- Header Section -->
   <header>
     <h1>Bitcoin Secure</h1>
     <nav>
@@ -21,17 +23,20 @@
     </nav>
   </header>
 
+  <!-- Home Section -->
   <section id="home">
     <h2>Secure Your Future with Bitcoin</h2>
     <p>Invest safely and smartly with us.</p>
     <a href="#invest" class="btn">Get Started Now</a>
   </section>
 
+  <!-- About Section -->
   <section id="about">
     <h2>About Us</h2>
     <p>Bitcoin Secure is a trusted platform helping individuals grow their wealth through strategic Bitcoin and USDT investments.</p>
   </section>
 
+  <!-- Investment Options Section -->
   <section id="options">
     <h2>Investment Options</h2>
     <ul>
@@ -41,12 +46,14 @@
     </ul>
   </section>
 
+  <!-- Testimonials Section -->
   <section id="testimonials">
     <h2>What Our Users Say</h2>
     <p>“I started with $100, now I’ve grown to $750 in weeks!” — A. Trader</p>
     <p>“Trusted and smooth investment system.” — K. Hodler</p>
   </section>
 
+  <!-- Investment Section -->
   <section id="invest">
     <h2>Invest in Bitcoin Secure</h2>
     <p>Send your USDT (TRC20) to the address below:</p>
@@ -57,12 +64,14 @@
     <p class="note">Make sure you're sending only USDT via TRC20 network.</p>
   </section>
 
+  <!-- Contact Section -->
   <section id="contact">
     <h2>Contact Us</h2>
     <p>Email: support@bitcoinsecure.com</p>
     <p>Telegram: @BitcoinSecureSupport</p>
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Bitcoin Secure. All rights reserved.</p>
   </footer>
@@ -71,10 +80,11 @@
     function copyWallet() {
       const wallet = document.getElementById("walletAddress");
       wallet.select();
-      wallet.setSelectionRange(0, 99999);
+      wallet.setSelectionRange(0, 99999); // For mobile devices
       document.execCommand("copy");
       alert("Wallet address copied to clipboard!");
     }
   </script>
+
 </body>
 </html>
