@@ -1,215 +1,117 @@
-/* Reset default margins and padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body and basic page styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #121212;
-    color: #fff;
-    line-height: 1.6;
-    padding-top: 80px; /* Adjusted for fixed nav */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #111;
+  color: #eee;
 }
 
-/* Header Styling */
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #222222;
-    color: #FFCC00; /* Yellow color */
-    padding: 15px;
-    z-index: 10;
+  background-color: #222;
+  padding: 20px;
+  text-align: center;
 }
 
-header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+header h1 {
+  margin: 0;
+  font-size: 2em;
+  color: #f2a900;
 }
 
-header nav ul {
-    display: flex;
-    list-style: none;
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
 }
 
-header nav ul li {
-    margin: 0 15px;
+nav ul li {
+  margin: 0 15px;
 }
 
-header nav ul li a {
-    color: #FFCC00; /* Yellow color */
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
+nav ul li a {
+  color: #ccc;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-header nav ul li a:hover {
-    color: #00CCFF; /* Blue color on hover */
+nav ul li a:hover {
+  color: #f2a900;
 }
 
-/* Hero Section */
-#hero {
-    background-image: url('your-hero-image-url.jpg');
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    padding: 100px 20px;
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #1c1c1c;
 }
 
-#hero h1 {
-    font-size: 50px;
-    color: #FFCC00;
-    margin-bottom: 10px;
+.hero h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #f2a900;
 }
 
-#hero p {
-    font-size: 18px;
-    color: #fff;
-    margin-bottom: 20px;
+.hero p {
+  font-size: 1.2em;
 }
 
-#hero .btn {
-    background-color: #FFCC00;
-    color: #222;
-    padding: 10px 30px;
-    border: none;
-    cursor: pointer;
-    font-size: 18px;
-    text-decoration: none;
-    display: inline-block;
-    transition: background-color 0.3s ease;
+.btn {
+  background-color: #f2a900;
+  color: #000;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 15px;
+  display: inline-block;
 }
 
-#hero .btn:hover {
-    background-color: #00CCFF;
+.section {
+  padding: 40px 20px;
+  text-align: center;
 }
 
-/* About Us Section */
-#about {
-    padding: 60px 20px;
-    background-color: #1c1c1c;
-    text-align: center;
+.wallet {
+  background-color: #181818;
 }
 
-#about h2 {
-    font-size: 40px;
-    color: #FFCC00;
-    margin-bottom: 20px;
+.wallet-address {
+  font-size: 1.2em;
+  color: #f2f2f2;
+  margin-bottom: 10px;
+  word-break: break-all;
 }
 
-#about p {
-    font-size: 18px;
-    color: #fff;
-    margin-bottom: 30px;
+button {
+  padding: 10px 20px;
+  background-color: #f2a900;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-/* Investment Options Section */
-#investment-options {
-    background-color: #121212;
-    padding: 60px 20px;
-    text-align: center;
+.contact p {
+  font-size: 1.2em;
+  margin: 10px 0;
 }
 
-#investment-options h2 {
-    font-size: 40px;
-    color: #FFCC00;
-    margin-bottom: 20px;
+.contact a {
+  color: #f2a900;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em;
 }
 
-.investment-option {
-    background-color: #222;
-    color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.contact a:hover {
+  text-decoration: underline;
 }
 
-.investment-option:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-}
-
-.investment-option h3 {
-    color: #FFCC00;
-}
-
-.investment-option p {
-    font-size: 18px;
-    color: #fff;
-}
-
-/* Contact Section */
-#contact {
-    background-color: #222222;
-    color: #fff;
-    padding: 60px 20px;
-    text-align: center;
-}
-
-#contact h2 {
-    font-size: 40px;
-    color: #FFCC00;
-    margin-bottom: 20px;
-}
-
-#contact p {
-    font-size: 18px;
-    margin-bottom: 30px;
-}
-
-#contact form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#contact form input, #contact form textarea {
-    width: 100%;
-    max-width: 500px;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-#contact form button {
-    background-color: #FFCC00;
-    color: #222;
-    padding: 10px 30px;
-    border: none;
-    cursor: pointer;
-    font-size: 18px;
-    transition: background-color 0.3s ease;
-}
-
-#contact form button:hover {
-    background-color: #00CCFF;
-}
-
-/* Footer Styling */
 footer {
-    background-color: #121212;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-footer p {
-    font-size: 16px;
-}
-
-footer a {
-    color: #FFCC00;
-    text-decoration: none;
-}
-
-footer a:hover {
-    color: #00CCFF;
+  background-color: #222;
+  color: #aaa;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
 }
