@@ -1,78 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Bitcoin Investment</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bitcoin Secure Investment</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Bitcoin Invest Pro</h1>
+    <h1>Bitcoin Secure</h1>
     <nav>
-      <a href="#about">About</a>
-      <a href="#plans">Investment Plans</a>
-      <a href="#testimonials">Testimonials</a>
-      <a href="#contact">Contact</a>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#options">Investment Options</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#invest">Invest</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
-  <section class="hero">
-    <h2>Grow Your Wealth with Smart Bitcoin Investments</h2>
-    <p>Secure, trusted, and designed for beginners and pros alike.</p>
-    <a href="#contact" class="cta-button">Get Started</a>
+  <section id="home">
+    <h2>Secure Your Future with Bitcoin</h2>
+    <p>Invest safely and smartly with us.</p>
+    <a href="#invest" class="btn">Get Started Now</a>
   </section>
 
   <section id="about">
     <h2>About Us</h2>
-    <p>We’re a passionate team committed to making Bitcoin investing simple and safe. With real-time insights and beginner-friendly tools, our platform is your gateway to crypto growth.</p>
+    <p>Bitcoin Secure is a trusted platform helping individuals grow their wealth through strategic Bitcoin and USDT investments.</p>
   </section>
 
-  <section id="plans">
+  <section id="options">
     <h2>Investment Options</h2>
-    <div class="plans">
-      <div class="plan">
-        <h3>Starter</h3>
-        <p>Invest from $50 - $499</p>
-        <p>Return: 10% weekly</p>
-      </div>
-      <div class="plan">
-        <h3>Pro</h3>
-        <p>Invest from $500 - $1,999</p>
-        <p>Return: 15% weekly</p>
-      </div>
-      <div class="plan">
-        <h3>Elite</h3>
-        <p>$2,000 and above</p>
-        <p>Return: 20% weekly</p>
-      </div>
-    </div>
+    <ul>
+      <li>Starter Plan - $100 Minimum</li>
+      <li>Pro Plan - $500 Minimum</li>
+      <li>Elite Plan - $1000 Minimum</li>
+    </ul>
   </section>
 
   <section id="testimonials">
     <h2>What Our Users Say</h2>
-    <div class="testimonial">
-      <p>"I started with just $100. In weeks, my returns doubled. Super impressed!"</p>
-      <strong>- Sandra M.</strong>
+    <p>“I started with $100, now I’ve grown to $750 in weeks!” — A. Trader</p>
+    <p>“Trusted and smooth investment system.” — K. Hodler</p>
+  </section>
+
+  <section id="invest">
+    <h2>Invest in Bitcoin Secure</h2>
+    <p>Send your USDT (TRC20) to the address below:</p>
+    <div class="wallet-box">
+      <input type="text" value="TWXmDAaAugAMXdrUzQSRSyvED5yptHNnDh" id="walletAddress" readonly>
+      <button onclick="copyWallet()">Copy Wallet Address</button>
     </div>
-    <div class="testimonial">
-      <p>"Honest platform. Smooth transactions. Transparent results."</p>
-      <strong>- Kelechi B.</strong>
-    </div>
+    <p class="note">Make sure you're sending only USDT via TRC20 network.</p>
   </section>
 
   <section id="contact">
     <h2>Contact Us</h2>
-    <form action="https://formspree.io/f/meoggbap" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+    <p>Email: support@bitcoinsecure.com</p>
+    <p>Telegram: @BitcoinSecureSupport</p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Bitcoin Invest Pro. All rights reserved.</p>
+    <p>&copy; 2025 Bitcoin Secure. All rights reserved.</p>
   </footer>
+
+  <script>
+    function copyWallet() {
+      const wallet = document.getElementById("walletAddress");
+      wallet.select();
+      wallet.setSelectionRange(0, 99999);
+      document.execCommand("copy");
+      alert("Wallet address copied to clipboard!");
+    }
+  </script>
 </body>
 </html>
