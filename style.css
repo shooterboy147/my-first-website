@@ -1,121 +1,119 @@
-/* Reset & General Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 body {
-  background-color: #000;
+  background-color: #0c0c0c;
   color: #fff;
   line-height: 1.6;
 }
 
-/* Header & Navbar */
 header {
   background-color: #111;
-  padding: 20px 0;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-nav {
+  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1100px;
-  margin: auto;
-  padding: 0 20px;
 }
 
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-  color: #ffc107;
+header h1 {
+  color: #f5c518;
 }
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-.nav-links li a {
+nav a {
+  color: white;
+  margin-left: 15px;
   text-decoration: none;
-  color: #fff;
-  transition: color 0.3s ease;
+  font-weight: bold;
 }
 
-.nav-links li a:hover {
-  color: #ffc107;
+nav a:hover {
+  color: #f5c518;
 }
 
-.menu-toggle {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-}
-
-.menu-toggle div {
-  width: 25px;
-  height: 3px;
-  background-color: #fff;
-  margin: 4px;
-}
-
-/* Hero Section */
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1624996752380-8ec242e0f85b') center/cover no-repeat;
-  padding: 100px 20px;
+  background: linear-gradient(135deg, #f5c518, #0c0c0c);
+  padding: 3rem 2rem;
   text-align: center;
 }
 
-.hero h1 {
-  font-size: 48px;
-  color: #ffc107;
-  margin-bottom: 20px;
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
-.hero p {
-  font-size: 20px;
-  color: #ddd;
+.hero .cta-button {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: #111;
+  color: #f5c518;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
 }
 
-/* Section Titles */
+section {
+  padding: 3rem 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
 section h2 {
-  font-size: 32px;
-  color: #ffc107;
-  margin-bottom: 20px;
-  text-align: center;
+  color: #f5c518;
+  margin-bottom: 1rem;
 }
 
-/* Investment Options */
-.investment-options {
-  background-color: #1c1c1c;
-  padding: 50px 20px;
+.plans {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.investment-options .option {
-  background-color: #2c2c2c;
-  padding: 20px;
-  border: 1px solid #ffc107;
+.plan {
+  background-color: #1a1a1a;
+  border: 1px solid #f5c518;
+  padding: 1rem;
   border-radius: 8px;
-  margin-bottom: 20px;
+}
+
+.testimonial {
+  background-color: #1e1e1e;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-left: 5px solid #f5c518;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: #1e1e1e;
   color: #fff;
 }
 
-.option h3 {
-  color: #ffc107;
+form button {
+  background-color: #f5c518;
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-/* About Us */
-.about {
-  padding: 50px 20px;
+footer {
+  text-align: center;
+  padding: 1rem;
   background-color: #111;
+  color: #888;
 }
-
-.about p {
-  max-width: 800px;
-  margin: auto;
