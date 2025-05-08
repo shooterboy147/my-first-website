@@ -1,151 +1,123 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   margin: 0;
-  background-color: #f8f9fa;
-  color: #333;
-  transition: background-color 0.3s, color 0.3s;
+  background: #fff;
+  color: #222;
+  line-height: 1.6;
 }
 
-.header {
-  background-color: #111;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+header {
+  background: #111;
+  color: gold;
+  padding: 1rem;
+  text-align: center;
 }
 
 .logo {
-  height: 45px;
-  width: auto;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  margin: 0;
-  padding: 0;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.dark-toggle {
-  background-color: #444;
-  color: white;
-  border: none;
-  padding: 8px 14px;
-  cursor: pointer;
-  margin-left: 20px;
-  border-radius: 5px;
-}
-
-.hero {
-  text-align: center;
-  padding: 50px 20px;
-  background-color: #fff;
-}
-
-.hero h1 {
-  font-size: 2.5rem;
+  width: 80px;
   margin-bottom: 10px;
 }
 
-.invest {
-  padding: 30px;
-  background-color: #f0f0f0;
+h1, h2, h3 {
+  color: gold;
 }
 
-.wallet-box {
-  background: #fff;
-  padding: 15px;
-  border-radius: 10px;
-  margin-bottom: 20px;
+.hero, .how-to-invest, .wallet-info, .roi-calculator, .testimonials, .security-badges, footer, .legal-text {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.wallet-address {
+  font-family: monospace;
+  font-size: 1.1rem;
+  word-break: break-all;
+  color: #333;
 }
 
 .qr-code {
   width: 150px;
-  display: block;
   margin-top: 10px;
 }
 
-.calculator {
-  background-color: #fff;
-  padding: 20px;
-  text-align: center;
-}
-
-.calculator input {
-  padding: 10px;
+input[type="number"] {
+  padding: 0.5rem;
   width: 200px;
   margin-right: 10px;
 }
 
-.calculator button {
-  padding: 10px 20px;
-  background-color: #222;
-  color: #fff;
+button {
+  padding: 0.5rem 1rem;
+  background: gold;
+  color: #111;
   border: none;
   cursor: pointer;
+  border-radius: 5px;
 }
 
-#result {
-  margin-top: 15px;
-  font-weight: bold;
-}
-
-section {
-  padding: 40px 20px;
+button:hover {
+  background: #f5c518;
 }
 
 .testimonial {
-  background: #eee;
-  padding: 20px;
-  border-left: 5px solid #111;
-  margin: 15px 0;
+  background: #f1f1f1;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-left: 4px solid gold;
+}
+
+.security-badges img {
+  height: 50px;
+  margin: 10px;
 }
 
 footer {
-  background-color: #222;
-  color: #ccc;
-  padding: 20px;
+  background: #111;
+  color: #fff;
   text-align: center;
 }
 
-footer a {
-  color: #ccc;
+.legal-links a {
   margin: 0 10px;
+  color: gold;
   text-decoration: none;
 }
 
-/* Dark Mode Styles */
-body.dark-mode {
-  background-color: #121212;
-  color: #e0e0e0;
+.legal-links a:hover {
+  text-decoration: underline;
 }
 
-body.dark-mode .header {
-  background-color: #1f1f1f;
+.legal-text {
+  background: #f9f9f9;
+  color: #333;
+  padding: 1rem;
+  margin: 1rem auto;
+  max-width: 800px;
+  border-left: 4px solid gold;
 }
 
-body.dark-mode nav a {
-  color: #fff;
+/* Dark Mode */
+body.dark {
+  background: #121212;
+  color: #ddd;
 }
 
-body.dark-mode .invest,
-body.dark-mode .calculator,
-body.dark-mode .testimonial {
-  background-color: #1e1e1e;
-  color: #e0e0e0;
+body.dark .wallet-address,
+body.dark .legal-text,
+body.dark .testimonial {
+  color: #eee;
+  background: #1e1e1e;
 }
 
-body.dark-mode footer {
-  background-color: #111;
+body.dark header {
+  background: #000;
 }
 
-body.dark-mode .wallet-box {
-  background-color: #222;
+body.dark footer {
+  background: #000;
+}
+
+body.dark button {
+  background: #f5c518;
+  color: #111;
 }
