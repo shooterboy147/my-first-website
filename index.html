@@ -1,111 +1,86 @@
-/* General styles */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #fff;
-  color: #333;
-  margin: 0;
-  padding: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Secure Bitcoin investments with transparent ROI calculations. Invest with confidence.">
+  <meta name="keywords" content="Bitcoin, Secure Investment, ROI Calculator, Cryptocurrency, Investment">
+  <meta name="author" content="Your Company Name">
+  <title>Bitcoin Secure Investment</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
 
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  <!-- Dark Mode Toggle Button -->
+  <button class="toggle-dark-mode">🌙</button>
 
-header .logo img {
-  height: 50px;
-}
+  <!-- Header Section -->
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Bitcoin Secure Logo">
+    </div>
+    <div class="header-right">
+      <button>Get Started</button>
+    </div>
+  </header>
 
-header .header-right button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-}
+  <!-- Main Content Section -->
+  <main>
+    <h1>Welcome to Bitcoin Secure</h1>
+    <p>Your trusted platform for secure Bitcoin investments.</p>
 
-header .header-right button:hover {
-  background-color: #45a049;
-}
+    <!-- ROI Calculator Section -->
+    <section class="roi-calculator">
+      <h2>ROI Calculator</h2>
+      <input type="number" id="investment" placeholder="Enter your investment amount (USD)" />
+      <button onclick="calculateROI()">Calculate ROI</button>
+      <p id="roi-result"></p>
+    </section>
 
-/* Dark Mode Styles */
-body.dark-mode {
-  background-color: #121212;
-  color: #fff;
-}
+    <!-- Bitcoin Address and QR Code -->
+    <section class="bitcoin-address">
+      <h2>Send Bitcoin to:</h2>
+      <span>1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa</span>
+      <div class="qr-code">
+        <img src="bitcoin-qr-code.png" alt="Bitcoin Wallet QR Code" />
+      </div>
+    </section>
 
-body.dark-mode header {
-  background-color: #444;
-}
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+      <h2>What Our Users Say</h2>
+      <div class="testimonial">
+        <p>"Bitcoin Secure has been a game changer for my investments. The platform is user-friendly and highly secure!" - John Doe</p>
+      </div>
+      <div class="testimonial">
+        <p>"I’ve seen great returns thanks to Bitcoin Secure. Highly recommend it for anyone looking to invest in Bitcoin." - Jane Smith</p>
+      </div>
+    </section>
+  </main>
 
-body.dark-mode .logo img {
-  filter: invert(1);
-}
+  <!-- Legal Section -->
+  <section class="legal">
+    <h2>Legal Information</h2>
+    <ul>
+      <li><a href="terms.html">Terms & Conditions</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="cookies.html">Cookie Policy</a></li>
+    </ul>
+  </section>
 
-body.dark-mode .header-right button {
-  background-color: #3e8e41;
-}
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 Bitcoin Secure. All Rights Reserved.</p>
+    <p>Contact us: <a href="tel:+13153717194">+1 315 371 7194</a> | Email: <a href="mailto:support@bitcoinsecure.com">support@bitcoinsecure.com</a></p>
+  </footer>
 
-body.dark-mode .header-right button:hover {
-  background-color: #2d6e2e;
-}
+  <!-- Cookie Policy -->
+  <div id="cookie-policy">
+    <h3>Cookie Policy</h3>
+    <p>We use cookies to enhance your experience on our platform. By using our website, you agree to our use of cookies.</p>
+    <button onclick="acceptCookies()">Accept</button>
+  </div>
 
-/* Sections */
-h1, h2 {
-  color: #333;
-}
-
-.roi-calculator input {
-  padding: 10px;
-  width: 100%;
-  margin-top: 10px;
-}
-
-button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  margin-top: 10px;
-}
-
-button:hover {
-  background-color: #45a049;
-}
-
-.qr-code {
-  margin-top: 20px;
-  width: 200px;
-  height: 200px;
-}
-
-/* Testimonials */
-.testimonials {
-  margin-top: 40px;
-}
-
-.testimonial {
-  margin-bottom: 20px;
-  font-style: italic;
-}
-
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-}
-
-footer a {
-  color: #4CAF50;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
+</body>
+</html>
