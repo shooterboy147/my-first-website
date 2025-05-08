@@ -1,196 +1,119 @@
-/* Reset default styling for all elements */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* General Styles */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
-  margin: 0;
-  padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fff;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
-/* Header and Logo */
 header {
-  background-color: #1a1a1a;
-  padding: 20px 0;
-  text-align: center;
-  color: white;
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
 }
 
 header .logo img {
-  width: 150px; /* Adjust logo size */
+    max-width: 150px;
+    margin-bottom: 10px;
 }
 
 nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+    list-style: none;
+    padding: 0;
 }
 
 nav ul li {
-  display: inline;
-  margin-right: 20px;
+    display: inline;
+    margin-right: 20px;
 }
 
 nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
 }
 
 section {
-  padding: 50px 20px;
-  text-align: center;
+    padding: 2rem;
 }
 
-/* How to Invest Section */
-#how-to-invest {
-  padding: 40px 20px;
-  background-color: #f8f9fa;
-  text-align: center;
+.btc-info {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    text-align: center;
 }
 
-#how-to-invest h2 {
-  font-size: 28px;
-  color: #333;
-  margin-bottom: 20px;
+.btc-info p {
+    font-size: 1.2rem;
 }
 
-#how-to-invest p {
-  font-size: 18px;
-  margin-bottom: 20px;
+.btc-info img {
+    max-width: 250px;
+    margin-top: 10px;
 }
 
-#how-to-invest ol {
-  text-align: left;
-  max-width: 600px;
-  margin: 0 auto;
-  font-size: 16px;
-  color: #444;
-  line-height: 1.8;
+.security-badges img {
+    max-width: 50px;
+    margin: 10px;
 }
 
-#how-to-invest code {
-  font-size: 16px;
-  background-color: #f0f0f0;
-  padding: 5px;
-  border-radius: 4px;
+.instructions {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
 }
 
-#how-to-invest img {
-  margin-top: 20px;
-  width: 200px;
-  height: 200px;
+.instructions h2 {
+    margin-bottom: 15px;
 }
 
-/* ROI Calculator Section */
-#roi-calculator {
-  background-color: #fff;
-  padding: 50px 20px;
+.instructions ol {
+    list-style-type: decimal;
 }
 
-#roi-calculator h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-#roi-calculator input {
-  font-size: 16px;
-  padding: 10px;
-  margin-bottom: 20px;
-  width: 250px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-#roi-calculator button {
-  background-color: #28a745;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-#roi-calculator button:hover {
-  background-color: #218838;
-}
-
-#roi-calculator #roi-result {
-  font-size: 18px;
-  color: #333;
-  margin-top: 20px;
-}
-
-/* Testimonials Section */
-.testimonial {
-  background-color: #e9ecef;
-  padding: 20px;
-  margin: 20px 0;
-  border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.testimonial p {
-  font-size: 18px;
-  font-style: italic;
-  color: #555;
-}
-
-#testimonials h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-/* Footer Section */
 footer {
-  text-align: center;
-  background-color: #1a1a1a;
-  color: #fff;
-  padding: 20px 0;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
 }
 
-/* Contact Section */
-#contact h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-  color: #333;
+footer .footer-links a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
 }
 
-#contact a {
-  color: #1a1a1a;
-  text-decoration: none;
-  font-size: 18px;
+/* Legal Pages Styling */
+footer a:hover {
+    text-decoration: underline;
 }
 
-/* Media Query for Mobile Responsiveness */
-@media screen and (max-width: 768px) {
-  nav ul li {
-    display: block;
+.legal-pages section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.legal-pages h2 {
     margin-bottom: 10px;
-  }
+    font-size: 1.5rem;
+}
 
-  #how-to-invest ol {
-    padding-left: 20px;
-  }
+.legal-pages p {
+    font-size: 1rem;
+}
 
-  #how-to-invest img {
-    width: 150px;
-    height: 150px;
-  }
-
-  #roi-calculator input {
-    width: 100%;
-  }
-
-  #roi-calculator button {
-    width: 100%;
-  }
+/* Responsive Design */
+@media (max-width: 768px) {
+    .instructions ol {
+        margin-left: 20px;
+    }
 }
