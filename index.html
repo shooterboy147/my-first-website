@@ -1,112 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Invest in Bitcoin securely with BitcoinSecure. Trusted platform for high ROI. Start with $1000.">
-    <meta name="keywords" content="Bitcoin investment, invest in Bitcoin, crypto investment, secure Bitcoin platform">
-    <meta name="author" content="BitcoinSecure">
-    <title>BitcoinSecure - Secure Bitcoin Investment</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="logo.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Invest in Bitcoin securely with BitcoinSecure. Trusted platform for high ROI. Start with $1000."/>
+  <meta name="keywords" content="Bitcoin investment, invest in Bitcoin, crypto investment, secure Bitcoin platform"/>
+  <meta name="author" content="BitcoinSecure"/>
+  <title>BitcoinSecure - Secure Bitcoin Investment</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" href="logo.png"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto&display=swap" rel="stylesheet"/>
 </head>
 <body>
-    <!-- Navigation -->
-    <header>
-        <div class="logo">
-            <img src="logo.png" alt="BitcoinSecure Logo">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#invest">Invest</a></li>
-                <li><a href="#calculator">ROI Calculator</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section id="home">
-        <h1>Your Trusted Platform to Invest in Bitcoin Securely</h1>
-        <p>Start with as little as $1000 to begin your journey with BitcoinSecure. Send Bitcoin to the address below to get started.</p>
-        
-        <!-- Bitcoin Wallet and QR Code -->
-        <div class="btc-info">
-            <p>Send Bitcoin to:</p>
-            <p><strong>Bitcoin Address: 14pHyKsCXxw4mWiGwHkXyJsrtvUkMS2ucR</strong></p>
-            <img src="btc-qr.png" alt="Bitcoin Wallet QR Code">
-            <div class="security-badges">
-                <img src="ssl-secure-badge.png" alt="SSL Secure">
-                <img src="trusted-platform-badge.png" alt="Trusted Platform">
-            </div>
-        </div>
-
-        <!-- Improved Instructions -->
-        <div class="instructions">
-            <h2>How to Invest</h2>
-            <ol>
-                <li><strong>Step 1:</strong> Copy the Bitcoin address above or scan the QR code.</li>
-                <li><strong>Step 2:</strong> Open your Bitcoin wallet app.</li>
-                <li><strong>Step 3:</strong> Paste the address or scan the QR code and enter your investment amount (starting from $1000).</li>
-                <li><strong>Step 4:</strong> Confirm the transaction and wait for your investment to be processed.</li>
-            </ol>
-        </div>
-    </section>
-
-    <!-- About Us Section -->
-    <section id="about">
-        <h2>About BitcoinSecure</h2>
-        <p>We provide a trusted and secure platform for investing in Bitcoin. Our mission is to offer high returns through secure, transparent investments.</p>
-    </section>
-
-    <!-- ROI Calculator Section -->
-    <section id="calculator">
-        <h2>ROI Calculator</h2>
-        <!-- Add your calculator here -->
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials">
-        <h2>What Our Investors Say</h2>
-        <div class="testimonial">
-            <p>"I have been investing with BitcoinSecure for 6 months and have seen significant growth in my investment." - John Doe</p>
-        </div>
-        <div class="testimonial">
-            <p>"A trustworthy platform that made investing in Bitcoin easy and secure." - Jane Smith</p>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: <a href="mailto:bitcoinsecure0@gmail.com">bitcoinsecure0@gmail.com</a></p>
-    </section>
-
-    <!-- Footer Section -->
-    <footer>
-        <div class="footer-links">
-            <a href="terms.html">Terms and Conditions</a>
-            <a href="privacy.html">Privacy Policy</a>
-            <a href="cookies.html">Cookie Policy</a>
-        </div>
-    </footer>
-
-    <!-- Legal Pages Embedded (Terms, Privacy, Cookies) -->
-    <div class="legal-pages">
-        <section id="terms">
-            <h2>Terms and Conditions</h2>
-            <p>Welcome to BitcoinSecure. By using our platform, you agree to the following terms...</p>
-        </section>
-        <section id="privacy">
-            <h2>Privacy Policy</h2>
-            <p>We value your privacy. This policy explains how we collect, use, and protect your information...</p>
-        </section>
-        <section id="cookies">
-            <h2>Cookie Policy</h2>
-            <p>This website uses cookies to ensure you get the best experience. Learn more about our cookie policy...</p>
-        </section>
+  <!-- Header -->
+  <header>
+    <div class="container header-container">
+      <div class="logo">
+        <img src="logo.png" alt="BitcoinSecure Logo" />
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#invest">Invest</a></li>
+          <li><a href="#calculator">ROI Calculator</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#terms">Terms</a></li>
+          <li><a href="#privacy">Privacy</a></li>
+          <li><a href="#cookies">Cookies</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="container">
+      <h1>Your Trusted Platform to Invest in Bitcoin Securely</h1>
+      <p>Start with as little as $1000 to begin your journey with BitcoinSecure. Send Bitcoin to the address below to get started.</p>
+      <div class="btc-info">
+        <p><strong>Bitcoin Address:</strong> 14pHyKsCXxw4mWiGwHkXyJsrtvUkMS2ucR</p>
+        <img src="btc-qr.png" alt="Bitcoin Wallet QR Code" class="qr-code"/>
+        <div class="security-badges">
+          <img src="ssl-secure-badge.png" alt="SSL Secure"/>
+          <img src="trusted-platform-badge.png" alt="Trusted Platform"/>
+        </div>
+      </div>
+      <div class="instructions">
+        <h2>How to Invest</h2>
+        <ol>
+          <li><strong>Step 1:</strong> Copy the Bitcoin address above or scan the QR code.</li>
+          <li><strong>Step 2:</strong> Open your Bitcoin wallet app.</li>
+          <li><strong>Step 3:</strong> Paste the address or scan the QR code and enter your investment amount (starting from $1000).</li>
+          <li><strong>Step 4:</strong> Confirm the transaction and wait for your investment to be processed.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2>About BitcoinSecure</h2>
+      <p>We provide a trusted and secure platform for investing in Bitcoin. Our mission is to offer high returns through secure, transparent investments.</p>
+    </div>
+  </section>
+
+  <!-- ROI Calculator Section -->
+  <section id="calculator" class="calculator-section">
+    <div class="container">
+      <h2>ROI Calculator</h2>
+      <form id="roi-form">
+        <label for="investment">Investment Amount ($):</label>
+        <input type="number" id="investment" name="investment" required/>
+        <label for="return">Expected Return ($):</label>
+        <input type="number" id="return" name="return" required/>
+        <button type="submit">Calculate ROI</button>
+      </form>
+      <p id="roi-result"></p>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials-section">
+    <div class="container">
+      <h2>What Our Investors Say</h2>
+      <div class="testimonial">
+        <p>"I have been investing with BitcoinSecure for 6 months and have seen significant growth in my investment." - John Doe</p>
+      </div>
+      <div class="testimonial">
+        <p>"A trustworthy platform that made investing in Bitcoin easy and secure." - Jane Smith</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Email: <a href="mailto:bitcoinsecure0@gmail.com">bitcoinsecure0@gmail.com</a></p>
+      <p>Phone: <a href="tel:+13153717194">+1 315 371 7194</a></p>
+    </div>
+  </section>
+
+  <!-- Legal Sections -->
+  <section id="terms" class="legal-section">
+    <div class="container">
+      <h2>Terms and Conditions</h2>
+      <p>Welcome to BitcoinSecure. By accessing or using our website and services, you agree to the following terms and conditions:</p>
+      <ul>
+        <li><strong>Eligibility:</strong> You must be at least 18 years old to use our services.</li>
+        <li><strong>Investment Disclaimer:</strong> All investments carry risk. Past performance is not a guarantee of future results. You are responsible for conducting your own due diligence.</li>
+        <li><strong>No Financial Advice:</strong> We do not offer financial or investment advice. Information on this site is for educational purposes only.</li>
+        <li><strong>Bitcoin Payments:</strong> All investments are made via Bitcoin and are non-refundable. Ensure you send funds to the correct address.</li>
+        <li><strong>Limitation of Liability:</strong> BitcoinSecure is not liable for any loss, damage, or miscommunication related to your investment.</li>
+        <li><strong>Accountability:</strong> You are responsible for securing your wallet and private keys. We do not store or access your funds directly.</li>
+        <li><strong>Changes:</strong> We reserve the right to update these terms at any time without prior notice. Continued use of the site means you accept those changes.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="privacy" class="legal-section">
+    <div class="container">
+      <h2>Privacy Policy</h2>
+      <p>This Privacy Policy explains how BitcoinSecure collects, uses, and protects your personal information:</p>
+      <ul>
+        <li><strong>Information We Collect:</strong> Name, email, wallet address, and transaction data.</li>
+        <li><strong>Use of Information:</strong> To deliver investment services, reply to inquiries, and improve customer experience.</li>
+        <li><strong>Data Sharing:</strong> We do not share your data with third parties without consent, except as required by law.</li>
+        <li><strong>Data Security:</strong> SSL encryption and strict confidentiality measures in place.</li>
+        <li><strong>Your Rights:</strong> You can request to update, view, or delete your data by contacting us.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="cookies" class="legal-section">
+    <div class="container">
+      <h2>Cookie Policy</h2>
+      <p>We use cookies to improve your browsing experience. Here's how:</p>
+      <ul>
+        <li><strong>Essential Cookies:</strong> Required for core website functionality.</li>
+        <li><strong>Analytics Cookies:</strong> Help us understand user behavior.</li>
+        <li><strong>Preferences:</strong> Remember your settings and preferences.</li>
+        <li><strong>Advertising:</strong> May be used to show relevant ads.</li>
+        <li><strong>Managing Cookies:</strong> You can disable cookies in your browser settings.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 BitcoinSecure. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ROI Script -->
+  <script>
+    document.getElementById("roi-form").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const investment = parseFloat(document.getElementById("investment").value);
+      const expected = parseFloat(document.getElementById("return").value);
+      if (investment > 0 && expected > 0) {
+        const roi = ((expected - investment) / investment) * 100;
+        document.getElementById("roi-result").textContent = `Estimated ROI: ${roi.toFixed(2)}%`;
+      } else {
+        document.getElementById("roi-result").textContent = "Please enter valid numbers.";
+      }
+    });
+  </script>
 </body>
 </html>
