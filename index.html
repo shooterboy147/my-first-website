@@ -1,76 +1,111 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Secure Bitcoin Investment Platform">
-    <meta name="author" content="Your Company Name">
-    <meta name="robots" content="index, follow">
-    <title>Bitcoin Secure Investment Platform</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="logo.png" type="image/png">
-    <!-- SEO Meta Tags -->
-    <meta name="keywords" content="Bitcoin, Investment, Secure, Cryptocurrency, ROI Calculator">
-    <meta name="description" content="Invest in Bitcoin securely and start earning with our ROI calculator and expert guidance.">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-</head>
-<body>
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
 
-    <!-- Dark Mode Toggle Button -->
-    <div class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle Dark Mode">
-        <button onclick="toggleDarkMode()">🌙</button>
-    </div>
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-    <header>
-        <img src="logo.png" alt="Bitcoin Secure Logo" class="logo">
-        <h1>Your Trusted Platform to Invest in Bitcoin Securely</h1>
-    </header>
+header .logo img {
+  height: 50px;
+}
 
-    <section id="bitcoin-section">
-        <h2>Invest in Bitcoin Now</h2>
-        <p>To start investing, send a minimum of $1000 worth of Bitcoin to the address below:</p>
-        <div id="bitcoin-wallet">
-            <p>Bitcoin Address: 14pHyKsCXxw4mWiGwHkXyJsrtvUkMS2ucR</p>
-            <img src="btc-qr.png" alt="Bitcoin QR Code" class="qr-code" />
-        </div>
-    </section>
+header .header-right button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
 
-    <section id="roi-calculator">
-        <h2>ROI Calculator</h2>
-        <form action="#">
-            <input type="number" placeholder="Enter amount" id="investment-amount" aria-label="Investment Amount" />
-            <button type="submit" aria-label="Calculate ROI">Calculate</button>
-        </form>
-    </section>
+header .header-right button:hover {
+  background-color: #45a049;
+}
 
-    <section id="testimonials">
-        <h2>What Our Users Are Saying</h2>
-        <div class="testimonial">
-            <p>"I earned a great return on my investment. The platform is secure and easy to use!" - John Doe</p>
-        </div>
-        <div class="testimonial">
-            <p>"This is the most reliable Bitcoin investment platform I've used!" - Jane Smith</p>
-        </div>
-    </section>
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #fff;
+}
 
-    <section id="contact-us">
-        <h2>Contact Us</h2>
-        <p>Email: <a href="mailto:bitcoinsecure0@gmail.com">bitcoinsecure0@gmail.com</a></p>
-        <p>Phone: <a href="tel:+13153717194">+1 315 371 7194</a></p>
-    </section>
+body.dark-mode header {
+  background-color: #444;
+}
 
-    <footer>
-        <p>&copy; 2025 Bitcoin Secure Investment Platform. All rights reserved.</p>
-        <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms.html">Terms & Conditions</a>
-    </footer>
+body.dark-mode .logo img {
+  filter: invert(1);
+}
 
-    <!-- Cookie Consent Banner -->
-    <div class="cookie-consent-banner" id="cookieConsentBanner">
-        <p>We use cookies to improve your experience. By using this website, you agree to our <a href="privacy-policy.html">Privacy Policy</a> and <a href="cookie-policy.html">Cookie Policy</a>.</p>
-        <button id="acceptCookies">Accept</button>
-    </div>
+body.dark-mode .header-right button {
+  background-color: #3e8e41;
+}
 
-    <script src="script.js"></script>
-</body>
-</html>
+body.dark-mode .header-right button:hover {
+  background-color: #2d6e2e;
+}
+
+/* Sections */
+h1, h2 {
+  color: #333;
+}
+
+.roi-calculator input {
+  padding: 10px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.qr-code {
+  margin-top: 20px;
+  width: 200px;
+  height: 200px;
+}
+
+/* Testimonials */
+.testimonials {
+  margin-top: 40px;
+}
+
+.testimonial {
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
