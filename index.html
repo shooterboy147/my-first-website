@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="description" content="Secure Bitcoin investment platform. Invest confidently with guaranteed returns.">
-    <meta name="keywords" content="Bitcoin investment, secure investment, cryptocurrency, ROI calculator">
-    <meta name="author" content="Bitcoin Secure">
     <title>Bitcoin Secure - Invest with Confidence</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
     <header>
@@ -20,20 +18,24 @@
         <h2>How to Invest</h2>
         <p>Follow these simple steps to start your investment:</p>
         <ul>
-            <li>1. Deposit a minimum of $1,000 in Bitcoin into the wallet address provided below.</li>
-            <li>2. Use the QR code or the Bitcoin address for your deposit.</li>
-            <li>3. Wait for confirmation of your deposit and start earning!</li>
+            <li>1. Deposit a minimum of $1,000 in Bitcoin to the wallet below.</li>
+            <li>2. Use the QR code or Bitcoin address for your deposit.</li>
+            <li>3. Wait for confirmation and start earning!</li>
         </ul>
         <div class="deposit-info">
             <img src="assets/images/bitcoin-qr.png" alt="Bitcoin QR Code">
-            <p>Bitcoin Address: 14pHyKsCXxw4mWiGwHkXyJsrtvUkMS2ucR</p>
+            <p><strong>BTC Address:</strong> 14pHyKsCXxw4mWiGwHkXyJsrtvUkMS2ucR</p>
         </div>
     </section>
 
     <section class="roi-calculator">
         <h2>ROI Calculator</h2>
-        <p>Use the calculator below to estimate your returns based on your investment.</p>
-        <!-- Include your ROI calculator here -->
+        <p>Estimate your returns below:</p>
+        <form id="roi-form">
+            <input type="number" id="amount" placeholder="Enter amount in USD" required />
+            <button type="button" onclick="calculateROI()">Calculate</button>
+            <p id="roi-result"></p>
+        </form>
     </section>
 
     <section class="what-investors-say">
@@ -50,7 +52,10 @@
 
     <section class="ssl-secured">
         <h3>Security Guaranteed</h3>
-        <p>Your transactions are secured with SSL encryption. <img src="assets/images/ssl-secured.png" alt="SSL Secured Badge"></p>
+        <p>
+            Your transactions are protected with SSL encryption.
+            <img src="assets/images/ssl-secured.png" alt="SSL Secured Badge">
+        </p>
     </section>
 
     <section class="contact-us">
@@ -68,7 +73,7 @@
         </ul>
     </footer>
 
-    <!-- Tawk.to Script -->
+    <!-- Tawk.to Live Chat -->
     <script type="text/javascript">
         var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
         (function () {
@@ -79,6 +84,17 @@
             s1.setAttribute('crossorigin', '*');
             s0.parentNode.insertBefore(s1, s0);
         })();
+    </script>
+
+    <!-- ROI Calculator Script -->
+    <script>
+        function calculateROI() {
+            const amount = document.getElementById("amount").value;
+            const roi = amount ? (parseFloat(amount) * 1.5).toFixed(2) : 0;
+            document.getElementById("roi-result").textContent = roi > 0 
+                ? `Estimated Return: $${roi}` 
+                : "Please enter a valid amount.";
+        }
     </script>
 </body>
 </html>
