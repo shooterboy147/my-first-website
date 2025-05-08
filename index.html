@@ -1,68 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Bitcoin Secure</title>
-  <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <!-- Add your navigation menu, logo, etc. here -->
+            <h1>Welcome to Our Platform</h1>
+        </nav>
+    </header>
 
-  <header class="hero">
-    <div class="container">
-      <h1>Welcome to Bitcoin Secure</h1>
-      <p>Invest in USDT (TRC20) with confidence and transparency.</p>
-      <a href="#invest" class="btn">Invest Now</a>
-    </div>
-  </header>
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <h2>What Our Investors Say</h2>
+        <div class="testimonials-carousel">
+            <div class="testimonial">
+                <p>"This platform has helped me grow my investments by over 40% in just 6 months!"</p>
+                <h3>- John Doe, Investor</h3>
+            </div>
+            <div class="testimonial">
+                <p>"The ROI calculator is a game-changer! It gave me a clear insight into potential returns."</p>
+                <h3>- Jane Smith, Investor</h3>
+            </div>
+            <!-- Add more testimonials as needed -->
+        </div>
+    </section>
 
-  <section id="plans" class="plans">
-    <h2>Choose Your Plan</h2>
-    <div class="plan-cards">
-      <div class="card">
-        <h3>Starter</h3>
-        <p>$50 - $499</p>
-        <p>5% ROI</p>
-      </div>
-      <div class="card">
-        <h3>Pro</h3>
-        <p>$500 - $4,999</p>
-        <p>10% ROI</p>
-      </div>
-      <div class="card">
-        <h3>Elite</h3>
-        <p>$5,000+</p>
-        <p>15% ROI</p>
-      </div>
-    </div>
-  </section>
+    <!-- ROI Calculator Section -->
+    <section class="roi-calculator">
+        <h2>Calculate Your Potential ROI</h2>
+        <form id="roi-form">
+            <label for="investment">Enter Investment Amount ($):</label>
+            <input type="number" id="investment" name="investment" required>
+            
+            <label for="rate">Select ROI Rate (%):</label>
+            <select id="rate" name="rate">
+                <option value="10">10%</option>
+                <option value="20">20%</option>
+                <option value="30">30%</option>
+            </select>
+            
+            <button type="submit">Calculate</button>
+        </form>
+        <div id="roi-result" style="margin-top: 20px;"></div>
+    </section>
 
-  <section id="invest" class="wallet-section">
-    <h2>Send Your Investment</h2>
-    <p>Send your USDT (TRC20) to the wallet address below:</p>
-    <div class="wallet-box">
-      <img src="wallet_qr.png" alt="Wallet QR Code" class="qr-img"/>
-      <p id="wallet">TWXmDAaAugAMXdrUzQSRSyvED5yptHNnDh</p>
-      <button onclick="copyWallet()">Copy Wallet</button>
-    </div>
-  </section>
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Your Website. All rights reserved.</p>
+    </footer>
 
-  <section class="contact">
-    <h2>Contact Us</h2>
-    <p>Email: <a href="mailto:bitcoinsecure0@gmail.com">bitcoinsecure0@gmail.com</a></p>
-    <p>Telegram: <a href="https://t.me/bitcoinsecure0">@bitcoinsecure0</a></p>
-  </section>
+    <!-- Embed JavaScript here -->
+    <script>
+        // ROI Calculator Script
+        document.getElementById('roi-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const investment = parseFloat(document.getElementById('investment').value);
+            const rate = parseFloat(document.getElementById('rate').value);
+            
+            if (isNaN(investment) || investment <= 0) {
+                alert("Please enter a valid investment amount.");
+                return;
+            }
+            
+            const roi = investment * (rate / 100);
+            const total = investment + roi;
 
-  <footer>
-    <p>©️ 2025 Bitcoin Secure. All rights reserved.</p>
-  </footer>
-
-  <script>
-    function copyWallet() {
-      navigator.clipboard.writeText("TWXmDAaAugAMXdrUzQSRSyvED5yptHNnDh");
-      alert("Wallet copied to clipboard!");
-    }
-  </script>
-
+            document.getElementById('roi-result').innerHTML = `
+                <p>Potential ROI: $${roi.toFixed(2)}</p>
+                <p>Total Amount after Investment: $${total.toFixed(2)}</p>
+            `;
+        });
+    </script>
 </body>
 </html>
