@@ -1,46 +1,94 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bitcoin Secure</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #111;
+  color: #f0f0f0;
+}
 
-  <header>
-    <h1>Secure Your Future With <span class="highlight">Bitcoin</span></h1>
-    <p>Invest in crypto with confidence.</p>
-  </header>
+header {
+  background-color: #000;
+  padding: 30px 20px;
+  text-align: center;
+}
 
-  <section class="how-to-invest">
-    <h2>How to Invest</h2>
-    <ol>
-      <li>Scan the QR code or copy the wallet address below.</li>
-      <li>Send your USDT (TRC20) to the wallet.</li>
-      <li>Contact us with the payment details.</li>
-      <li>Your investment will be processed within 1 hour.</li>
-    </ol>
+header h1 {
+  font-size: 32px;
+  margin: 0;
+}
 
-    <div class="wallet-section">
-      <p><strong>Wallet Address:</strong><br>TWXmDAaAugAMXdrUzQSR5yvED5yptHNnDh</p>
-      <img src="wallet_qr.png" alt="Wallet QR Code" class="wallet-qr">
-      <button onclick="copyWallet()">Copy Wallet</button>
-    </div>
-  </section>
+.highlight {
+  color: #ff9900;
+}
 
-  <footer>
-    <p>Contact us: <a href="mailto:bitcoinsecure0@gmail.com">bitcoinsecure0@gmail.com</a> | Telegram: <a href="https://t.me/bitcoinsecure0" target="_blank">@bitcoinsecure0</a></p>
-  </footer>
+header p {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #ccc;
+}
 
-  <script>
-    function copyWallet() {
-      const wallet = "TWXmDAaAugAMXdrUzQSR5yvED5yptHNnDh";
-      navigator.clipboard.writeText(wallet).then(() => {
-        alert("Wallet address copied to clipboard!");
-      });
-    }
-  </script>
+.how-to-invest {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #1a1a1a;
+}
 
-</body>
-</html>
+.how-to-invest h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #ff9900;
+}
+
+.how-to-invest ol {
+  max-width: 400px;
+  margin: 0 auto 30px;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.wallet-section {
+  margin-top: 20px;
+}
+
+.wallet-section p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.wallet-qr {
+  width: 160px;
+  height: 160px;
+  display: block;
+  margin: 10px auto 20px;
+}
+
+button {
+  background-color: #ff9900;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #e68a00;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  background-color: #000;
+  color: #aaa;
+}
+
+footer a {
+  color: #ff9900;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
