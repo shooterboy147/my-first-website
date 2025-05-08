@@ -1,64 +1,56 @@
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f7f8fa;
-  color: #222;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f6fa;
+    color: #333;
+    text-align: center;
 }
 
 header {
-  background-color: #f7931a;
-  color: white;
-  text-align: center;
-  padding: 40px 20px;
+    background-color: #f7931a;
+    color: white;
+    padding: 20px 10px;
 }
 
 .logo {
-  width: 80px;
-  height: auto;
+    width: 80px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
 }
 
-.hero {
-  text-align: center;
-  padding: 50px 20px;
-  background-color: #fff;
+h1 {
+    margin: 0;
+    font-size: 2.2em;
 }
 
-.cta-btn {
-  background-color: #f7931a;
-  color: white;
-  padding: 12px 25px;
-  border: none;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: bold;
+p {
+    font-size: 1em;
 }
 
-section {
-  padding: 40px 20px;
-  max-width: 800px;
-  margin: auto;
+main {
+    padding: 20px;
 }
 
-.why ul {
-  list-style-type: square;
-  padding-left: 20px;
+.contact-info, .btc-info {
+    background: white;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.wallet {
-  text-align: center;
+.btc-address {
+    font-family: monospace;
+    background: #eee;
+    padding: 10px;
+    border-radius: 5px;
+    word-break: break-word;
 }
 
-.qr {
-  width: 200px;
-  margin-top: 10px;
-  border: 2px solid #ccc;
-  border-radius: 6px;
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #f7931a;
-  color: white;
-  margin-top: 40px;
+.qr-code {
+    margin-top: 15px;
+    width: 150px;
+    height: auto;
 }
