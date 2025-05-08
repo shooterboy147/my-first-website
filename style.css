@@ -1,147 +1,196 @@
-/* Global Styles */
+/* Reset default styling for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
 }
 
+/* Header and Logo */
 header {
-    background-color: #333;
-    padding: 20px;
-    color: white;
-    text-align: center;
+  background-color: #1a1a1a;
+  padding: 20px 0;
+  text-align: center;
+  color: white;
 }
 
-header nav ul {
-    list-style: none;
-    padding: 0;
+header .logo img {
+  width: 150px; /* Adjust logo size */
 }
 
-header nav ul li {
-    display: inline;
-    margin: 0 15px;
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+nav ul li {
+  display: inline;
+  margin-right: 20px;
 }
 
-main {
-    padding: 20px;
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
 }
 
-/* Section Styles */
 section {
-    margin-bottom: 40px;
+  padding: 50px 20px;
+  text-align: center;
 }
 
-h2 {
-    color: #333;
+/* How to Invest Section */
+#how-to-invest {
+  padding: 40px 20px;
+  background-color: #f8f9fa;
+  text-align: center;
 }
 
-/* Features Section */
-#features ul {
-    list-style: none;
-    padding: 0;
+#how-to-invest h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
 }
 
-#features ul li {
-    background-color: #fff;
-    margin: 10px 0;
-    padding: 15px;
-    border: 1px solid #ddd;
+#how-to-invest p {
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 
-/* Security Assurance */
-#security {
-    background-color: #f1f1f1;
-    padding: 20px;
-    text-align: center;
-    border-radius: 8px;
+#how-to-invest ol {
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 16px;
+  color: #444;
+  line-height: 1.8;
 }
 
-#security p {
-    font-size: 1.1em;
+#how-to-invest code {
+  font-size: 16px;
+  background-color: #f0f0f0;
+  padding: 5px;
+  border-radius: 4px;
 }
 
-/* Call to Action Section */
-#cta {
-    text-align: center;
-    padding: 20px;
-    background-color: #28a745;
-    color: white;
-    border-radius: 8px;
+#how-to-invest img {
+  margin-top: 20px;
+  width: 200px;
+  height: 200px;
 }
 
-#cta button {
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1.2em;
-    cursor: pointer;
-    border-radius: 5px;
+/* ROI Calculator Section */
+#roi-calculator {
+  background-color: #fff;
+  padding: 50px 20px;
 }
 
-#cta button:hover {
-    background-color: #555;
+#roi-calculator h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#roi-calculator input {
+  font-size: 16px;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 250px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#roi-calculator button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#roi-calculator button:hover {
+  background-color: #218838;
+}
+
+#roi-calculator #roi-result {
+  font-size: 18px;
+  color: #333;
+  margin-top: 20px;
 }
 
 /* Testimonials Section */
-#testimonials {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
 .testimonial {
-    margin-bottom: 15px;
+  background-color: #e9ecef;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .testimonial p {
-    font-style: italic;
-    color: #555;
+  font-size: 18px;
+  font-style: italic;
+  color: #555;
+}
+
+#testimonials h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Footer Section */
+footer {
+  text-align: center;
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 20px 0;
 }
 
 /* Contact Section */
-#contact {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f1f1f1;
-    padding: 20px;
-    border-radius: 8px;
+#contact h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
 }
 
-.btc-qr {
-    max-width: 150px;
-    margin-left: 20px;
+#contact a {
+  color: #1a1a1a;
+  text-decoration: none;
+  font-size: 18px;
 }
 
-/* Footer Styles */
-footer {
-    background-color: #333;
-    padding: 20px;
-    text-align: center;
-    color: white;
-}
+/* Media Query for Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+  nav ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
 
-footer .footer-links a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-}
+  #how-to-invest ol {
+    padding-left: 20px;
+  }
 
-footer .social-icons a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-}
+  #how-to-invest img {
+    width: 150px;
+    height: 150px;
+  }
 
-footer .social-icons a:hover {
-    text-decoration: underline;
+  #roi-calculator input {
+    width: 100%;
+  }
+
+  #roi-calculator button {
+    width: 100%;
+  }
 }
