@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bitcoin Secure</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Secure Your Future With Bitcoin</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
@@ -13,21 +13,24 @@
     <p>Invest in crypto with confidence.</p>
   </header>
 
-  <section class="how-to-invest">
-    <h2>How to Invest</h2>
-    <ol>
-      <li>Scan the QR code or copy the wallet address below.</li>
-      <li>Send your USDT (TRC20) to the wallet.</li>
-      <li>Contact us with the payment details.</li>
-      <li>Your investment will be processed within 1 hour.</li>
-    </ol>
+  <main>
+    <section class="how-to-invest">
+      <h2>How to Invest</h2>
+      <ol>
+        <li>Scan the QR code or copy the wallet address below.</li>
+        <li>Send your USDT (TRC20) to the wallet.</li>
+        <li>Contact us with the payment details.</li>
+        <li>Your investment will be processed within 1 hour.</li>
+      </ol>
 
-    <div class="wallet-section">
-      <p><strong>Wallet Address:</strong><br>TWXmDAaAugAMXdrUzQSR5yvED5yptHNnDh</p>
-      <img src="wallet_qr.png" alt="Wallet QR Code" class="wallet-qr">
-      <button onclick="copyWallet()">Copy Wallet</button>
-    </div>
-  </section>
+      <div class="wallet-box">
+        <p><strong>Wallet Address:</strong></p>
+        <p class="wallet-address" id="walletText">TWXmDAaAugAMXdrUzQSR5yvED5yptHNnDh</p>
+        <img src="wallet_qr.png" alt="Wallet QR Code" class="wallet-qr" />
+        <button onclick="copyWallet()">Copy Wallet</button>
+      </div>
+    </section>
+  </main>
 
   <footer>
     <p>Contact us: <a href="mailto:bitcoinsecure0@gmail.com">bitcoinsecure0@gmail.com</a> | Telegram: <a href="https://t.me/bitcoinsecure0" target="_blank">@bitcoinsecure0</a></p>
@@ -35,8 +38,8 @@
 
   <script>
     function copyWallet() {
-      const wallet = "TWXmDAaAugAMXdrUzQSR5yvED5yptHNnDh";
-      navigator.clipboard.writeText(wallet).then(() => {
+      const walletText = document.getElementById("walletText").textContent;
+      navigator.clipboard.writeText(walletText).then(() => {
         alert("Wallet address copied to clipboard!");
       });
     }
