@@ -2,46 +2,77 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Secure Your Future With Bitcoin</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bitcoin Secure</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
-  <header>
-    <h1>Secure Your Future With <span class="highlight">Bitcoin</span></h1>
-    <p>Invest in crypto with confidence.</p>
+  <header class="hero">
+    <div class="container">
+      <h1>Secure Your Future with Bitcoin Secure</h1>
+      <p>Fast, Safe & Trusted USDT Investments</p>
+      <a href="#invest" class="btn">Start Investing Now</a>
+    </div>
   </header>
 
-  <main>
-    <section class="how-to-invest">
-      <h2>How to Invest</h2>
-      <ol>
-        <li>Scan the QR code or copy the wallet address below.</li>
-        <li>Send your USDT (TRC20) to the wallet.</li>
-        <li>Contact us with the payment details.</li>
-        <li>Your investment will be processed within 1 hour.</li>
-      </ol>
-
-      <div class="wallet-box">
-        <p><strong>Wallet Address:</strong></p>
-        <p class="wallet-address" id="walletText">TWXmDAaAugAMXdrUzQSR5yvED5yptHNnDh</p>
-        <img src="wallet_qr.png" alt="Wallet QR Code" class="wallet-qr" />
-        <button onclick="copyWallet()">Copy Wallet</button>
+  <section id="plans" class="plans">
+    <h2>Investment Plans</h2>
+    <div class="plan-cards">
+      <div class="card">
+        <h3>Starter</h3>
+        <p>$50 - $499</p>
+        <p>5% ROI</p>
       </div>
-    </section>
-  </main>
+      <div class="card">
+        <h3>Pro</h3>
+        <p>$500 - $4,999</p>
+        <p>10% ROI</p>
+      </div>
+      <div class="card">
+        <h3>Elite</h3>
+        <p>$5,000+</p>
+        <p>15% ROI</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="invest" class="wallet-section">
+    <h2>Send Your Investment</h2>
+    <p>Send your USDT (TRC20) to the address below</p>
+    <div class="wallet-box">
+      <img src="wallet_qr.png" alt="Wallet QR Code" class="qr-img"/>
+      <p id="wallet">TWXmDAaAugAMXdrUzQSRSyvED5yptHNnDh</p>
+      <button onclick="copyWallet()">Copy Wallet</button>
+    </div>
+  </section>
+
+  <section id="testimonials" class="testimonials">
+    <h2>What Investors Say</h2>
+    <div class="testimonial">
+      <p>"Fast returns and great support! Highly recommended."</p>
+      <h4>— Samuel O., Nigeria</h4>
+    </div>
+    <div class="testimonial">
+      <p>"Professional team. Made my first investment stress-free."</p>
+      <h4>— Maria L., Spain</h4>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Need Help?</h2>
+    <p>Email: <a href="mailto:bitcoinsecure0@gmail.com">bitcoinsecure0@gmail.com</a></p>
+    <p>Telegram: <a href="https://t.me/bitcoinsecure0">@bitcoinsecure0</a></p>
+  </section>
 
   <footer>
-    <p>Contact us: <a href="mailto:bitcoinsecure0@gmail.com">bitcoinsecure0@gmail.com</a> | Telegram: <a href="https://t.me/bitcoinsecure0" target="_blank">@bitcoinsecure0</a></p>
+    <p>©️ 2025 Bitcoin Secure. All rights reserved.</p>
   </footer>
 
   <script>
     function copyWallet() {
-      const walletText = document.getElementById("walletText").textContent;
-      navigator.clipboard.writeText(walletText).then(() => {
-        alert("Wallet address copied to clipboard!");
-      });
+      navigator.clipboard.writeText("TWXmDAaAugAMXdrUzQSRSyvED5yptHNnDh");
+      alert("Wallet copied to clipboard!");
     }
   </script>
 
