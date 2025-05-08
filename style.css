@@ -51,6 +51,8 @@ section {
 .qr {
   width: 200px;
   margin-top: 10px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
 }
 
 footer {
