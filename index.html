@@ -2,137 +2,128 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Bitcoin Secure Investment</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Your trusted platform to invest in Bitcoin securely and professionally.">
+  <meta name="keywords" content="Bitcoin, BTC Investment, Secure Bitcoin Platform, Crypto ROI">
+  <meta name="author" content="BitcoinSecure">
+  <title>BitcoinSecure - Invest in BTC Safely</title>
   <link rel="stylesheet" href="style.css" />
-  <meta name="description" content="Your trusted platform to invest in Bitcoin securely with real-time ROI calculator and 24/7 support.">
 </head>
 <body>
-  <header class="header">
-    <img src="logo.png" alt="Bitcoin Secure Logo" class="logo" />
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#invest">Invest</a></li>
-        <li><a href="#testimonials">Testimonials</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <button id="darkToggle" class="dark-toggle">Dark Mode</button>
+  <header>
+    <img src="logo.png" alt="BitcoinSecure Logo" class="logo" />
+    <h1>BitcoinSecure</h1>
+    <button id="darkModeToggle">Toggle Dark Mode</button>
   </header>
 
-  <main>
-    <section class="hero">
-      <h1>Invest in Bitcoin Securely</h1>
-      <p>Your trusted platform to invest in BTC with guidance, support, and returns.</p>
-    </section>
+  <section class="hero">
+    <h2>Your trusted platform to invest in Bitcoin securely</h2>
+    <p>Start your investment journey with as little as <strong>$1,000</strong> in Bitcoin.</p>
+  </section>
 
-    <section id="invest" class="invest">
-      <h2>Send Your BTC Investment</h2>
-      <p>Start with at least <strong>$1,000 worth of Bitcoin</strong> to the address below:</p>
-      <div class="wallet-box">
-        <p><strong>Bitcoin Address:</strong> 14pHyKsCXxw4mWiGwHkXyJsrtvUkMS2ucR</p>
-        <img src="btc-qr.png" alt="Bitcoin QR Code" class="qr-code" />
-      </div>
+  <section class="how-to-invest">
+    <h3>How to Invest</h3>
+    <ol>
+      <li>Step 1: Buy Bitcoin from your preferred wallet/exchange.</li>
+      <li>Step 2: Send exactly $1,000 worth of BTC to the address below.</li>
+      <li>Step 3: Use the QR code or manually copy the wallet address.</li>
+      <li>Step 4: Contact us to confirm your transaction.</li>
+    </ol>
+  </section>
 
-      <h3>How to Invest</h3>
-      <ol>
-        <li>Send a minimum of $1000 worth of BTC to the wallet address.</li>
-        <li>Send a confirmation email to: <strong>bitcoinsecure0@gmail.com</strong></li>
-        <li>Include your name, transaction hash, and contact number: +1 315 371 7194.</li>
-        <li>Wait for confirmation within 1–3 hours. Your ROI will begin processing.</li>
-      </ol>
-    </section>
+  <section class="wallet-info">
+    <h3>Send Bitcoin to:</h3>
+    <p class="wallet-address">14pHyKsCXxw4mWiGwHkXyJsrtvUkMS2ucR</p>
+    <img src="btc-qr.png" alt="Bitcoin QR Code" class="qr-code" />
+  </section>
 
-    <section class="calculator">
-      <h2>ROI Calculator</h2>
-      <label for="amount">Enter BTC Amount:</label>
-      <input type="number" id="amount" placeholder="e.g. 0.5" />
-      <button onclick="calculateROI()">Calculate ROI</button>
-      <p id="result"></p>
-    </section>
+  <section class="roi-calculator">
+    <h3>ROI Calculator</h3>
+    <input type="number" id="investment" placeholder="Enter amount in USD" />
+    <button onclick="calculateROI()">Calculate</button>
+    <p id="roiResult"></p>
+  </section>
 
-    <section id="about">
-      <h2>About Us</h2>
-      <p>BitcoinSecure is a reliable platform helping users grow their investments through strategic BTC management. We provide transparency, support, and secure transactions.</p>
-    </section>
+  <section class="testimonials">
+    <h3>What Investors Are Saying</h3>
+    <div class="testimonial">
+      <p>"I trusted BitcoinSecure with my first crypto investment, and it paid off. Amazing returns!"</p>
+      <span>— Alex, USA</span>
+    </div>
+    <div class="testimonial">
+      <p>"Fast, secure, and professional. I’ve doubled my investment in 6 months."</p>
+      <span>— Maria, Canada</span>
+    </div>
+  </section>
 
-    <section id="testimonials">
-      <h2>Testimonials</h2>
-      <div class="testimonial">
-        <p>"I invested $1,000 and received great returns within a week. Solid team!"</p>
-        <h4>- Michael B.</h4>
-      </div>
-      <div class="testimonial">
-        <p>"Customer support was responsive and my funds were handled securely."</p>
-        <h4>- Aisha R.</h4>
-      </div>
-    </section>
+  <section class="security-badges">
+    <img src="https://www.ssltrust.com/assets/images/seals/positive-ssl-seal.svg" alt="SSL Secured" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Trustpilot_logo.png" alt="Trusted Platform" />
+  </section>
 
-    <section id="contact">
-      <h2>Contact Us</h2>
+  <footer>
+    <section class="contact">
+      <h4>Contact Us</h4>
       <p>Email: bitcoinsecure0@gmail.com</p>
       <p>Phone: +1 315 371 7194</p>
     </section>
 
-    <footer>
-      <div class="legal-links">
-        <a href="#terms">Terms & Conditions</a> |
-        <a href="#privacy">Privacy Policy</a> |
-        <a href="#cookies">Cookie Policy</a>
-      </div>
+    <nav class="legal-links">
+      <a href="#terms">Terms & Conditions</a>
+      <a href="#privacy">Privacy Policy</a>
+      <a href="#cookies">Cookie Policy</a>
+    </nav>
+  </footer>
 
-      <section id="terms">
-        <h3>Terms & Conditions</h3>
-        <p>By investing with us, you agree to our policies on digital investment risks, returns, and legal responsibilities.</p>
-      </section>
+  <section class="legal-text" id="terms">
+    <h4>Terms & Conditions</h4>
+    <p>By investing through our platform, you agree to the risks involved in cryptocurrency investments. We are not liable for market volatility or user error in sending funds.</p>
+  </section>
 
-      <section id="privacy">
-        <h3>Privacy Policy</h3>
-        <p>Your data is never shared with third parties. All information collected is solely for identity verification and communication purposes.</p>
-      </section>
+  <section class="legal-text" id="privacy">
+    <h4>Privacy Policy</h4>
+    <p>We respect your privacy. Your contact information will never be shared or sold. Data collected is only used for customer support and communication.</p>
+  </section>
 
-      <section id="cookies">
-        <h3>Cookie Policy</h3>
-        <p>We use cookies to enhance your experience. By using our site, you accept our use of cookies to track preferences and performance.</p>
-      </section>
-    </footer>
-  </main>
+  <section class="legal-text" id="cookies">
+    <h4>Cookie Policy</h4>
+    <p>We use cookies to improve user experience and website performance. By using this site, you agree to our use of cookies. You may disable cookies in your browser settings.</p>
+  </section>
 
-  <!-- ROI JavaScript -->
+  <!-- ROI Script -->
   <script>
     function calculateROI() {
-      const amount = parseFloat(document.getElementById('amount').value);
-      if (!amount || amount <= 0) {
-        document.getElementById('result').textContent = "Please enter a valid amount.";
+      const investment = parseFloat(document.getElementById('investment').value);
+      if (isNaN(investment)) {
+        document.getElementById('roiResult').textContent = 'Please enter a valid amount.';
         return;
       }
-      const roi = amount * 1.5;
-      document.getElementById('result').textContent = `Estimated ROI: ${roi.toFixed(4)} BTC`;
+      const roi = investment * 1.5; // Example: 50% ROI
+      document.getElementById('roiResult').textContent = `Your expected return: $${roi.toFixed(2)}`;
     }
   </script>
 
-  <!-- Dark Mode Toggle Script -->
+  <!-- Dark Mode Script -->
   <script>
-    const toggle = document.getElementById("darkToggle");
-    toggle.addEventListener("click", () => {
-      document.body.classList.toggle("dark-mode");
-      toggle.textContent = document.body.classList.contains("dark-mode") ? "Light Mode" : "Dark Mode";
+    const toggleBtn = document.getElementById('darkModeToggle');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
     });
   </script>
 
-  <!-- Start of Tawk.to Script -->
+  <!--Start of Tawk.to Script-->
   <script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-      s1.async=true;
-      s1.src='https://embed.tawk.to/681c8a48e6230a190d54a387/1iqnnoau9';
-      s1.charset='UTF-8';
-      s1.setAttribute('crossorigin','*');
-      s0.parentNode.insertBefore(s1,s0);
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"),
+        s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/681c8a48e6230a190d54a387/1iqnnoau9';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
     })();
   </script>
-  <!-- End of Tawk.to Script -->
+  <!--End of Tawk.to Script-->
 </body>
 </html>
