@@ -1,72 +1,62 @@
-/* General Body and Layout Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f7f8fa;
+  color: #222;
 }
 
-/* Header Styling */
 header {
-    background-color: #4CAF50; /* Green background for header */
-    color: white;
-    padding: 20px;
-    text-align: center;
+  background-color: #f7931a;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
+.logo {
+  width: 80px;
+  height: auto;
 }
 
-/* Logo Styling */
-header .logo img {
-    max-width: 150px;
-    height: auto;
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #fff;
 }
 
-/* Main Content Section Styling */
-main {
-    padding: 40px;
-    background-color: #ffffff;
-    margin: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.cta-btn {
+  background-color: #f7931a;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-main h2 {
-    font-size: 1.8rem;
-    color: #333;
-    margin-bottom: 10px;
+section {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
 }
 
-main p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #666;
+.why ul {
+  list-style-type: square;
+  padding-left: 20px;
 }
 
-/* Footer Styling */
+.wallet {
+  text-align: center;
+}
+
+.qr {
+  width: 200px;
+  margin-top: 10px;
+}
+
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Customizing the Tawk.to Chat Widget */
-#tawk-chat-widget {
-    width: 350px;
-    height: 500px;
-}
-
-/* Optional: Custom logo appearance inside the chat widget */
-#tawk-chat-widget .tawk-logo {
-    background-image: url('path_to_your_logo'); /* Replace with the actual path to your logo */
-    background-size: contain;
-    background-repeat: no-repeat;
+  text-align: center;
+  padding: 20px;
+  background-color: #f7931a;
+  color: white;
+  margin-top: 40px;
 }
