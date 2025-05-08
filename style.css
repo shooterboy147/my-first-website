@@ -1,124 +1,133 @@
-/* Default Theme */
+/* Basic styles */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
 }
 
 header {
-  background-color: #333;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
-header .logo img {
-  max-width: 150px; /* Ensured the logo isn't oversized */
+header .logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-header .header-right button {
-  background-color: #ff9900;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  cursor: pointer;
+header .logo {
+    width: 150px;
 }
 
-header .header-right button:hover {
-  background-color: #e68a00;
+.dark-mode {
+    background-color: #121212;
+    color: white;
 }
 
-main {
-  text-align: center;
-  padding: 30px;
+.dark-mode header {
+    background-color: #222;
 }
 
-.roi-calculator input, .roi-calculator button {
-  padding: 10px;
-  margin: 10px 0;
+.dark-mode .button, .dark-mode .dark-mode-toggle {
+    background-color: #444;
+    color: white;
 }
 
-.testimonial {
-  background-color: #f1f1f1;
-  padding: 20px;
-  margin: 10px;
-  border-radius: 8px;
+.dark-mode .btc-qr {
+    border: 2px solid white;
 }
 
-.testimonial p {
-  font-style: italic;
+button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #f1c40f;
+    color: white;
+    font-size: 16px;
 }
 
-.legal {
-  margin-top: 20px;
+button:hover {
+    background-color: #e1b60e;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.btc-qr {
+    width: 200px;
+    margin: 20px 0;
+}
+
+input[type="number"] {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 300px;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.testimonials blockquote {
+    font-style: italic;
+    border-left: 5px solid #f1c40f;
+    padding-left: 10px;
+    margin-bottom: 20px;
 }
 
 footer {
-  text-align: center;
-  padding: 10px;
-  background-color: #333;
-  color: white;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
 }
 
-/* Dark Mode Theme */
-body.dark-mode {
-  background-color: #181818;
-  color: white;
+footer p {
+    margin: 0;
 }
 
-header.dark-mode {
-  background-color: #222;
+.dark-mode-toggle {
+    background-color: #f1c40f;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
 }
 
-.roi-calculator input, .roi-calculator button {
-  background-color: #444;
-  color: white;
-  border: none;
-  border-radius: 5px;
+.dark-mode-toggle:hover {
+    background-color: #e1b60e;
 }
 
-footer.dark-mode {
-  background-color: #222;
+.legal-links a {
+    color: #f1c40f;
+    text-decoration: none;
+    margin: 0 10px;
 }
 
-/* Cookie Policy Styling */
-#cookie-policy {
-  position: fixed;
-  bottom: 10px;
-  left: 0;
-  width: 100%;
-  background-color: #333;
-  color: white;
-  padding: 15px;
-  text-align: center;
+.legal-links a:hover {
+    text-decoration: underline;
 }
 
-#cookie-policy button {
-  background-color: #ff9900;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-}
-
-/* Mobile Responsive Design */
 @media (max-width: 768px) {
-  header {
-    flex-direction: column;
-  }
+    header .logo-container {
+        flex-direction: column;
+        text-align: center;
+    }
 
-  .roi-calculator {
-    width: 90%;
-    margin: 0 auto;
-  }
+    .btc-qr {
+        width: 150px;
+    }
 
-  .testimonial {
-    width: 80%;
-    margin: 10px auto;
-  }
-
-  .legal ul {
-    padding-left: 20px;
-  }
+    button {
+        width: 100%;
+    }
 }
