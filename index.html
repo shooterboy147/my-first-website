@@ -1,81 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bitcoin Secure Investments</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <nav>
-            <h1>Welcome to Our Platform</h1>
-        </nav>
-    </header>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials-section">
-        <h2>What Our Investors Say</h2>
-        <div class="testimonials-carousel">
-            <div class="testimonial">
-                <p>"This platform has helped me grow my investments by over 40% in just 6 months!"</p>
-                <h3>- John Doe, Investor</h3>
-            </div>
-            <div class="testimonial">
-                <p>"The ROI calculator is a game-changer! It gave me a clear insight into potential returns."</p>
-                <h3>- Jane Smith, Investor</h3>
-            </div>
-        </div>
-    </section>
+  <header class="hero">
+    <h1>Welcome to Bitcoin Secure Investments</h1>
+    <p>Your trusted partner for growing wealth through Bitcoin.</p>
+    <a href="#invest" class="btn">Start Investing</a>
+  </header>
 
-    <!-- ROI Calculator Section -->
-    <section class="roi-calculator">
-        <h2>Calculate Your Potential ROI</h2>
-        <form id="roi-form">
-            <label for="investment">Enter Investment Amount ($):</label>
-            <input type="number" id="investment" name="investment" required>
+  <section class="stats">
+    <h2>Why Investors Trust Us</h2>
+    <div class="stat-boxes">
+      <div class="stat"><strong>$500K+</strong><br>Invested</div>
+      <div class="stat"><strong>1,200+</strong><br>Trusted Investors</div>
+      <div class="stat"><strong>30%</strong><br>Average ROI</div>
+    </div>
+  </section>
 
-            <label for="rate">Select ROI Rate (%):</label>
-            <select id="rate" name="rate">
-                <option value="10">10%</option>
-                <option value="20">20%</option>
-                <option value="30">30%</option>
-            </select>
+  <section class="wallet">
+    <h2>Invest in Bitcoin</h2>
+    <p>Send your investment to the address below:</p>
+    <div class="wallet-address">
+      <strong>Bitcoin Address:</strong><br>
+      <code>14pHyKsCXxw4mWiGwHkXyJsrtvUkMS2ucR</code>
+    </div>
+    <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=bitcoin:14pHyKsCXxw4mWiGwHkXyJsrtvUkMS2ucR" alt="QR Code for Bitcoin Wallet">
+  </section>
 
-            <button type="submit">Calculate</button>
-        </form>
-        <div id="roi-result" style="margin-top: 20px;"></div>
-    </section>
+  <section class="calculator" id="invest">
+    <h2>Calculate Your ROI</h2>
+    <label>Investment Amount ($):</label>
+    <input type="number" id="amount" placeholder="Enter amount" />
+    <label>ROI (%):</label>
+    <input type="number" id="roi" placeholder="Enter ROI %" value="30" />
+    <button onclick="calculateROI()">Calculate</button>
+    <p id="result"></p>
+  </section>
 
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2025 Your Website. All rights reserved.</p>
-    </footer>
+  <section class="testimonials">
+    <h2>What Our Investors Say</h2>
+    <blockquote>"This platform helped me earn more in 3 months than I did in a year!"<br>- Sarah K.</blockquote>
+    <blockquote>"Reliable and secure. I’ve already referred 10 friends."<br>- James O.</blockquote>
+  </section>
 
-    <!-- Embed JavaScript here -->
-    <script>
-        // ROI Calculator Script
-        document.getElementById('roi-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const investment = parseFloat(document.getElementById('investment').value);
-            const rate = parseFloat(document.getElementById('rate').value);
-            
-            if (isNaN(investment) || investment <= 0) {
-                alert("Please enter a valid investment amount.");
-                return;
-            }
-            
-            const roi = investment * (rate / 100);
-            const total = investment + roi;
+  <section class="trust">
+    <h2>Security & Trust</h2>
+    <p>Secured by SSL • Verified Wallet • Fast Transactions</p>
+  </section>
 
-            document.getElementById('roi-result').innerHTML = `
-                <p>Potential ROI: $${roi.toFixed(2)}</p>
-                <p>Total Amount after Investment: $${total.toFixed(2)}</p>
-            `;
-        });
-    </script>
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <form action="https://formsubmit.co/bitcoinsecure0@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Bitcoin Secure Investments. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function calculateROI() {
+      const amount = parseFloat(document.getElementById('amount').value);
+      const roi = parseFloat(document.getElementById('roi').value);
+      if (!isNaN(amount) && !isNaN(roi)) {
+        const result = amount + (amount * roi / 100);
+        document.getElementById('result').innerText = `Your potential return: $${result.toFixed(2)}`;
+      } else {
+        document.getElementById('result').innerText = 'Please enter valid numbers.';
+      }
+    }
+  </script>
+
 </body>
 </html>
