@@ -1,86 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Secure Bitcoin investments with transparent ROI calculations. Invest with confidence.">
-  <meta name="keywords" content="Bitcoin, Secure Investment, ROI Calculator, Cryptocurrency, Investment">
-  <meta name="author" content="Your Company Name">
-  <title>Bitcoin Secure Investment</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Invest in Bitcoin securely with our trusted platform. Easy to use with transparent investment processes.">
+    <meta name="keywords" content="Bitcoin, Invest in Bitcoin, Secure Bitcoin, Bitcoin QR Code, Bitcoin Wallet">
+    <meta name="author" content="BitcoinSecure">
+    <meta name="robots" content="index, follow">
+    <title>Bitcoin Secure - Invest in Bitcoin Securely</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // Dark mode toggle
+        function toggleDarkMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+            localStorage.setItem('darkMode', element.classList.contains("dark-mode"));
+        }
+
+        // Check if dark mode is enabled
+        window.onload = function() {
+            if (localStorage.getItem('darkMode') === 'true') {
+                document.body.classList.add('dark-mode');
+            }
+        }
+    </script>
 </head>
 <body>
 
-  <!-- Dark Mode Toggle Button -->
-  <button class="toggle-dark-mode">🌙</button>
+    <!-- Header with Logo -->
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Bitcoin Secure Logo" class="logo">
+            <button class="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+        </div>
+    </header>
 
-  <!-- Header Section -->
-  <header>
-    <div class="logo">
-      <img src="logo.png" alt="Bitcoin Secure Logo" style="max-width: 150px;">
-    </div>
-    <div class="header-right">
-      <button>Get Started</button>
-    </div>
-  </header>
+    <!-- Main Section -->
+    <main>
+        <!-- Bitcoin Section with QR Code and Instructions -->
+        <section class="bitcoin-section">
+            <h1>Invest in Bitcoin Securely</h1>
+            <p>To start investing, simply send Bitcoin to the wallet address below:</p>
+            <p><strong>Bitcoin Address:</strong> 14pHyKsCXxw4mWiGwHkXyJsrtvUkMS2ucR</p>
+            <img src="btc-qr.png" alt="Bitcoin QR Code" class="btc-qr">
+            <p>Scan the QR code or copy the Bitcoin address to your wallet.</p>
+            <h2>How to Invest</h2>
+            <ul>
+                <li>Step 1: Deposit at least $1000 worth of Bitcoin.</li>
+                <li>Step 2: Transfer the Bitcoin to the wallet address above.</li>
+                <li>Step 3: You will receive confirmation once your investment is received.</li>
+            </ul>
+        </section>
 
-  <!-- Main Content Section -->
-  <main>
-    <h1>Welcome to Bitcoin Secure</h1>
-    <p>Your trusted platform for secure Bitcoin investments.</p>
+        <!-- ROI Calculator Section -->
+        <section class="roi-calculator">
+            <h2>ROI Calculator</h2>
+            <input type="number" id="investment" placeholder="Enter Amount (USD)" />
+            <button onclick="calculateROI()">Calculate</button>
+            <p id="roi-result"></p>
+        </section>
 
-    <!-- ROI Calculator Section -->
-    <section class="roi-calculator">
-      <h2>ROI Calculator</h2>
-      <input type="number" id="investment" placeholder="Enter your investment amount (USD)" />
-      <button onclick="calculateROI()">Calculate ROI</button>
-      <p id="roi-result"></p>
-    </section>
+        <!-- Contact Information Section -->
+        <section class="contact-section">
+            <h2>Contact Us</h2>
+            <p>Email: <a href="mailto:bitcoinsecure0@gmail.com">bitcoinsecure0@gmail.com</a></p>
+            <p>Phone: <a href="tel:+13153717194">+1 315 371 7194</a></p>
+        </section>
 
-    <!-- Bitcoin Address and QR Code -->
-    <section class="bitcoin-address">
-      <h2>Send Bitcoin to:</h2>
-      <span>14pHyKsCXxw4mWiGwHkXyJsrtvUkMS2ucR</span>
-      <div class="qr-code">
-        <img src="bitcoin-qr-code.png" alt="Bitcoin Wallet QR Code" />
-      </div>
-    </section>
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <h2>What Our Investors Say</h2>
+            <blockquote>
+                "Bitcoin Secure is the best place to invest in Bitcoin. I feel confident and secure with every investment!" - John Doe
+            </blockquote>
+            <blockquote>
+                "Fast, easy, and reliable. I highly recommend Bitcoin Secure for anyone looking to get into Bitcoin!" - Sarah Lee
+            </blockquote>
+        </section>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials">
-      <h2>What Our Users Say</h2>
-      <div class="testimonial">
-        <p>"Bitcoin Secure has been a game changer for my investments. The platform is user-friendly and highly secure!" - John Doe</p>
-      </div>
-      <div class="testimonial">
-        <p>"I’ve seen great returns thanks to Bitcoin Secure. Highly recommend it for anyone looking to invest in Bitcoin." - Jane Smith</p>
-      </div>
-    </section>
-  </main>
+        <!-- Legal Pages Links -->
+        <section class="legal-links">
+            <a href="#privacy-policy">Privacy Policy</a> | <a href="#terms-condition">Terms & Conditions</a> | <a href="#cookie-policy">Cookie Policy</a>
+        </section>
 
-  <!-- Legal Section -->
-  <section class="legal">
-    <h2>Legal Information</h2>
-    <ul>
-      <li><a href="terms.html">Terms & Conditions</a></li>
-      <li><a href="privacy.html">Privacy Policy</a></li>
-      <li><a href="cookies.html">Cookie Policy</a></li>
-    </ul>
-  </section>
+        <!-- Live Chat (Tawk.to) -->
+        <section class="live-chat">
+            <div id="tawk_123456789"></div>
+        </section>
+    </main>
 
-  <!-- Footer Section -->
-  <footer>
-    <p>&copy; 2025 Bitcoin Secure. All Rights Reserved.</p>
-    <p>Contact us: <a href="tel:+13153717194">+1 315 371 7194</a> | Email: <a href="mailto:support@bitcoinsecure.com">support@bitcoinsecure.com</a></p>
-  </footer>
-
-  <!-- Cookie Policy -->
-  <div id="cookie-policy">
-    <h3>Cookie Policy</h3>
-    <p>We use cookies to enhance your experience on our platform. By using our website, you agree to our use of cookies.</p>
-    <button onclick="acceptCookies()">Accept</button>
-  </div>
+    <footer>
+        <p>&copy; 2025 Bitcoin Secure. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
