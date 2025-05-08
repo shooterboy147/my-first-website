@@ -1,119 +1,298 @@
-/* General Styles */
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #fff;
-    color: #333;
-    margin: 0;
-    padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
 }
 
+/* Header */
 header {
-    background-color: #333;
-    color: white;
-    padding: 1rem;
-    text-align: center;
+  background-color: #1a1a1a;
+  padding: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-header .logo img {
-    max-width: 150px;
-    margin-bottom: 10px;
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+.logo img {
+  height: 60px;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.1rem;
+.nav-links li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
-section {
-    padding: 2rem;
+.nav-links li a:hover {
+  color: #f0a500;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(to right, #f0f0f0, #ffffff);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #555;
 }
 
 .btc-info {
-    background-color: #f4f4f4;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 8px;
-    text-align: center;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  display: inline-block;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .btc-info p {
-    font-size: 1.2rem;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #333;
 }
 
-.btc-info img {
-    max-width: 250px;
-    margin-top: 10px;
+.qr-code {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 15px;
 }
 
 .security-badges img {
-    max-width: 50px;
-    margin: 10px;
+  height: 40px;
+  margin: 0 10px;
 }
 
+/* Instructions */
 .instructions {
-    background-color: #f9f9f9;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 8px;
+  margin-top: 40px;
+  text-align: left;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .instructions h2 {
-    margin-bottom: 15px;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #1a1a1a;
 }
 
 .instructions ol {
-    list-style-type: decimal;
+  list-style-position: inside;
+  color: #555;
 }
 
+.instructions li {
+  margin-bottom: 10px;
+}
+
+/* About Section */
+.about-section {
+  background-color: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+}
+
+.about-section p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Calculator Section */
+.calculator-section {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.calculator-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+}
+
+#roi-form {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#roi-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+#roi-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#roi-form button {
+  background-color: #f0a500;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#roi-form button:hover {
+  background-color: #d18e00;
+}
+
+#roi-result {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  background-color: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.testimonials-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+}
+
+.testimonial {
+  max-width: 600px;
+  margin: 0 auto 20px;
+  font-style: italic;
+  color: #555;
+}
+
+/* Contact Section */
+.contact-section {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+}
+
+.contact-section p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.contact-section a {
+  color: #f0a500;
+  text-decoration: none;
+}
+
+.contact-section a:hover {
+  text-decoration: underline;
+}
+
+/* Legal Sections */
+.legal-section {
+  background-color: #ffffff;
+  padding: 60px 20px;
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.legal-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+}
+
+.legal-section p,
+.legal-section ul {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.legal-section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* Footer */
 footer {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    text-align: center;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
 }
 
-footer .footer-links a {
-    color: white;
-    text-decoration: none;
-    margin-right: 15px;
-}
-
-/* Legal Pages Styling */
-footer a:hover {
-    text-decoration: underline;
-}
-
-.legal-pages section {
-    padding: 20px;
-    background-color: #f9f9f9;
-    margin-top: 20px;
-    border-radius: 8px;
-}
-
-.legal-pages h2 {
-    margin-bottom: 10px;
-    font-size: 1.5rem;
-}
-
-.legal-pages p {
-    font-size: 1rem;
+footer p {
+  font-size: 0.9rem;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .instructions ol {
-        margin-left: 20px;
-    }
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .btc-info {
+    width: 100%;
+  }
+
+  .qr-code {
+    width: 150px;
+    height: 150px;
+  }
 }
