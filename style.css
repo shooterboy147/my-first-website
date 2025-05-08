@@ -14,7 +14,7 @@ header {
 }
 
 header .logo img {
-  max-width: 150px;
+  max-width: 150px; /* Ensured the logo isn't oversized */
 }
 
 header .header-right button {
