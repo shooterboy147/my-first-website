@@ -1,31 +1,72 @@
-/* Add your existing styles here */
+/* General Body and Layout Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
 
-/* Custom styling for the Tawk.to widget */
+/* Header Styling */
+header {
+    background-color: #4CAF50; /* Green background for header */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Logo Styling */
+header .logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+/* Main Content Section Styling */
+main {
+    padding: 40px;
+    background-color: #ffffff;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+main p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Customizing the Tawk.to Chat Widget */
 #tawk-chat-widget {
-    /* Customize widget size or position */
     width: 350px;
     height: 500px;
 }
 
-/* Adjust logo or other appearance-related aspects */
+/* Optional: Custom logo appearance inside the chat widget */
 #tawk-chat-widget .tawk-logo {
-    background-image: url('path_to_your_logo_image'); /* Replace with your logo URL */
+    background-image: url('path_to_your_logo'); /* Replace with the actual path to your logo */
     background-size: contain;
     background-repeat: no-repeat;
-}
-
-/* Example of other page styling, this can be extended or modified */
-header {
-    text-align: center;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #f8f8f8;
-}
-
-h1, h2, p {
-    margin: 0;
-    padding: 10px;
 }
