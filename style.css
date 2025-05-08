@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fff8e1; /* Bitcoin Gold Theme */
+    background-color: #fff8e1; /* Bitcoin Gold theme light background */
     color: #333;
 }
 
@@ -15,7 +15,7 @@ header {
 }
 
 header .logo img {
-    width: 150px; /* Logo size */
+    width: 150px; /* Adjust logo size */
 }
 
 /* How to Invest Section */
@@ -40,7 +40,7 @@ header .logo img {
 }
 
 .deposit-info img {
-    width: 200px; /* Adjust QR code size */
+    width: 200px;
     margin: 20px 0;
 }
 
@@ -89,7 +89,7 @@ header .logo img {
 }
 
 .testimonial img {
-    width: 100px; /* Adjust Trustpilot logo size */
+    width: 100px; /* Trustpilot logo size */
 }
 
 .testimonial p {
@@ -104,7 +104,7 @@ header .logo img {
 }
 
 .ssl-secured img {
-    width: 100px; /* SSL Badge size */
+    width: 100px;
 }
 
 /* Footer */
