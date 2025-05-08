@@ -1,44 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bitcoin Secure</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bitcoin Secure Platform</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <img src="logo.png" alt="Bitcoin Secure Logo" class="logo">
-        <h1>Bitcoin Secure</h1>
-        <p>Your trusted platform to invest in BTC securely.</p>
-    </header>
+  <header>
+    <img src="logo.png" alt="Bitcoin Secure Logo" class="logo" />
+    <h1>Your Trusted Platform to Invest in BTC Securely</h1>
+  </header>
 
-    <main>
-        <section class="contact-info">
-            <h2>Contact Information</h2>
-            <p>Email: <a href="mailto:bitcoinsecure0@gmail.com">bitcoinsecure0@gmail.com</a></p>
-            <p>Phone: <a href="tel:+13153717194">+1 315 371 7194</a></p>
-        </section>
+  <section class="about">
+    <h2>About Us</h2>
+    <p>Bitcoin Secure is your reliable platform to safely invest in Bitcoin. With years of experience and secure transaction handling, we help individuals grow their wealth in crypto with confidence.</p>
+  </section>
 
-        <section class="btc-info">
-            <h2>Invest in Bitcoin</h2>
-            <p>Send your BTC to the wallet address below:</p>
-            <p class="btc-address">14pHyKsCXxw4mWiGwHkXyJsrtvUkMS2ucR</p>
-            <img src="btc-qr.png" alt="Bitcoin QR Code" class="qr-code">
-        </section>
-    </main>
+  <section class="roi-calculator">
+    <h2>ROI Calculator</h2>
+    <p>Estimate your return on investment</p>
+    <label>Investment Amount (USD):</label>
+    <input type="number" id="amount" />
+    <label>Expected ROI (%):</label>
+    <input type="number" id="roi" />
+    <button onclick="calculateROI()">Calculate</button>
+    <p id="result"></p>
+  </section>
 
-    <!-- Tawk.to Live Chat Script -->
-    <script type="text/javascript">
-    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-    (function () {
-        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-        s1.async = true;
-        s1.src = 'https://embed.tawk.to/681c8a48e6230a190d54a387/1iqnnoau9';
-        s1.charset = 'UTF-8';
-        s1.setAttribute('crossorigin', '*');
-        s0.parentNode.insertBefore(s1, s0);
-    })();
-    </script>
+  <section class="btc-payment">
+    <h2>Invest in Bitcoin Now</h2>
+    <p>Send BTC to the address below:</p>
+    <strong>14pHyKsCXxw4mWiGwHkXyJsrtvUkMS2ucR</strong>
+    <img src="btc-qr.png" alt="Bitcoin QR Code" class="qr" />
+  </section>
+
+  <section class="testimonials">
+    <h2>What Our Investors Say</h2>
+    <div class="testimonial">
+      <p>"I've doubled my investment within 6 months! Super trustworthy platform." – <strong>Sarah K.</strong></p>
+    </div>
+    <div class="testimonial">
+      <p>"Easy, fast, and secure. The support team is always helpful." – <strong>James M.</strong></p>
+    </div>
+    <div class="testimonial">
+      <p>"Bitcoin Secure helped me understand crypto and grow my portfolio." – <strong>Chinedu A.</strong></p>
+    </div>
+  </section>
+
+  <footer>
+    <h2>Contact Us</h2>
+    <p>Phone: +1 315 371 7194</p>
+    <p>Email: bitcoinsecure0@gmail.com</p>
+    <p>©️ 2025 Bitcoin Secure</p>
+  </footer>
+
+  <!-- ROI Calculator Script -->
+  <script>
+    function calculateROI() {
+      const amount = parseFloat(document.getElementById('amount').value);
+      const roi = parseFloat(document.getElementById('roi').value);
+      if (isNaN(amount) || isNaN(roi)) {
+        document.getElementById('result').innerText = 'Please enter valid numbers.';
+        return;
+      }
+      const total = amount + (amount * roi / 100);
+      document.getElementById('result').innerText = `Your return: $${total.toFixed(2)}`;
+    }
+  </script>
+
+  <!-- Tawk.to Live Chat Script -->
+  <script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/681c8a48e6230a190d54a387/1iqnnoau9';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
 </body>
 </html>
