@@ -27,25 +27,26 @@
     </section>
 
     <section id="invest" class="invest">
-      <h2>Send your BTC investment</h2>
+      <h2>Send Your BTC Investment</h2>
       <p>Start with at least <strong>$1,000 worth of Bitcoin</strong> to the address below:</p>
       <div class="wallet-box">
         <p><strong>Bitcoin Address:</strong> 14pHyKsCXxw4mWiGwHkXyJsrtvUkMS2ucR</p>
         <img src="btc-qr.png" alt="Bitcoin QR Code" class="qr-code" />
       </div>
+
       <h3>How to Invest</h3>
       <ol>
         <li>Send a minimum of $1000 worth of BTC to the wallet address.</li>
         <li>Send a confirmation email to: <strong>bitcoinsecure0@gmail.com</strong></li>
         <li>Include your name, transaction hash, and contact number: +1 315 371 7194.</li>
-        <li>Wait for confirmation within 1-3 hours. Your ROI will begin processing.</li>
+        <li>Wait for confirmation within 1–3 hours. Your ROI will begin processing.</li>
       </ol>
     </section>
 
     <section class="calculator">
       <h2>ROI Calculator</h2>
       <label for="amount">Enter BTC Amount:</label>
-      <input type="number" id="amount" placeholder="e.g. 0.5">
+      <input type="number" id="amount" placeholder="e.g. 0.5" />
       <button onclick="calculateROI()">Calculate ROI</button>
       <p id="result"></p>
     </section>
@@ -97,19 +98,7 @@
     </footer>
   </main>
 
-  <!-- Tawk.to Live Chat -->
-  <script type="text/javascript">
-    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-    (function () {
-      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-      s1.async = true;
-      s1.src = 'https://embed.tawk.to/your_unique_chat_code_here';
-      s1.charset = 'UTF-8';
-      s1.setAttribute('crossorigin', '*');
-      s0.parentNode.insertBefore(s1, s0);
-    })();
-  </script>
-
+  <!-- ROI JavaScript -->
   <script>
     function calculateROI() {
       const amount = parseFloat(document.getElementById('amount').value);
@@ -121,5 +110,19 @@
       document.getElementById('result').textContent = `Estimated ROI: ${roi.toFixed(4)} BTC`;
     }
   </script>
+
+  <!-- Start of Tawk.to Script -->
+  <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/681c8a48e6230a190d54a387/1iqnnoau9';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+    })();
+  </script>
+  <!-- End of Tawk.to Script -->
 </body>
 </html>
