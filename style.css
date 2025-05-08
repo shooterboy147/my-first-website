@@ -1,224 +1,124 @@
-/* General styles */
+/* Default Theme */
 body {
   font-family: Arial, sans-serif;
-  background-color: #fff;
+  background-color: #f9f9f9;
   color: #333;
-  margin: 0;
-  padding: 0;
 }
 
 header {
   background-color: #333;
-  color: #fff;
-  padding: 20px;
+  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 header .logo img {
-  height: 50px;
+  max-width: 150px;
 }
 
 header .header-right button {
-  background-color: #4CAF50;
+  background-color: #ff9900;
   color: white;
-  padding: 10px 20px;
   border: none;
+  padding: 10px 15px;
   cursor: pointer;
 }
 
 header .header-right button:hover {
-  background-color: #45a049;
+  background-color: #e68a00;
 }
 
-/* Dark Mode Styles */
-body.dark-mode {
-  background-color: #121212;
-  color: #fff;
-}
-
-body.dark-mode header {
-  background-color: #444;
-}
-
-body.dark-mode .logo img {
-  filter: invert(1);
-}
-
-body.dark-mode .header-right button {
-  background-color: #3e8e41;
-}
-
-body.dark-mode .header-right button:hover {
-  background-color: #2d6e2e;
-}
-
-/* Main Sections */
 main {
-  padding: 20px;
+  text-align: center;
+  padding: 30px;
 }
 
-h1, h2 {
-  color: #333;
-}
-
-h2 {
-  margin-top: 20px;
-  font-size: 24px;
-}
-
-/* ROI Calculator */
-.roi-calculator input {
+.roi-calculator input, .roi-calculator button {
   padding: 10px;
-  width: 100%;
-  margin-top: 10px;
-  border: 1px solid #ccc;
+  margin: 10px 0;
+}
+
+.testimonial {
+  background-color: #f1f1f1;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+.testimonial p {
+  font-style: italic;
+}
+
+.legal {
+  margin-top: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
+
+/* Dark Mode Theme */
+body.dark-mode {
+  background-color: #181818;
+  color: white;
+}
+
+header.dark-mode {
+  background-color: #222;
+}
+
+.roi-calculator input, .roi-calculator button {
+  background-color: #444;
+  color: white;
+  border: none;
   border-radius: 5px;
 }
 
-.roi-calculator button {
-  background-color: #4CAF50;
+footer.dark-mode {
+  background-color: #222;
+}
+
+/* Cookie Policy Styling */
+#cookie-policy {
+  position: fixed;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+#cookie-policy button {
+  background-color: #ff9900;
   color: white;
   padding: 10px 20px;
   border: none;
   cursor: pointer;
-  margin-top: 10px;
-  border-radius: 5px;
 }
 
-.roi-calculator button:hover {
-  background-color: #45a049;
-}
-
-/* Bitcoin Address and QR Code */
-.bitcoin-address {
-  margin-top: 40px;
-}
-
-.bitcoin-address span {
-  font-weight: bold;
-}
-
-.qr-code {
-  margin-top: 20px;
-  width: 200px;
-  height: 200px;
-}
-
-/* Testimonials Section */
-.testimonials {
-  margin-top: 40px;
-}
-
-.testimonial {
-  margin-bottom: 20px;
-  font-style: italic;
-}
-
-/* Legal Links */
-.legal ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.legal ul li {
-  margin: 10px 0;
-}
-
-.legal ul li a {
-  color: #4CAF50;
-  text-decoration: none;
-}
-
-.legal ul li a:hover {
-  text-decoration: underline;
-}
-
-/* Footer Section */
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-}
-
-footer a {
-  color: #4CAF50;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
-/* Dark Mode Specific Elements */
-body.dark-mode footer {
-  background-color: #444;
-}
-
-body.dark-mode footer a {
-  color: #80e4a0;
-}
-
-/* Accessibility Improvements */
-button:focus, a:focus {
-  outline: 3px solid #80e4a0;
-  outline-offset: 2px;
-}
-
-input:focus {
-  border-color: #80e4a0;
-  box-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
-}
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
   header {
     flex-direction: column;
-    text-align: center;
   }
 
-  header .header-right {
-    margin-top: 10px;
+  .roi-calculator {
+    width: 90%;
+    margin: 0 auto;
   }
 
-  .roi-calculator, .bitcoin-address, .testimonials {
-    text-align: center;
+  .testimonial {
+    width: 80%;
+    margin: 10px auto;
   }
 
-  .qr-code {
-    width: 150px;
-    height: 150px;
-  }
-
-  footer {
-    padding: 15px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .logo img {
-    height: 40px;
-  }
-
-  h1 {
-    font-size: 24px;
-  }
-
-  h2 {
-    font-size: 20px;
-  }
-
-  .roi-calculator input {
-    padding: 8px;
-  }
-
-  .roi-calculator button {
-    padding: 8px 16px;
-  }
-
-  footer {
-    padding: 10px;
+  .legal ul {
+    padding-left: 20px;
   }
 }
