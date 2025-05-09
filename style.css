@@ -1,121 +1,104 @@
-/* Base Style */
 body {
-    font-family: 'Segoe UI', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #fff;
-    color: #111;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff8e1;
+  color: #333;
 }
 
 header {
-    background-color: #d4af37;
-    padding: 15px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: #f2c744;
+  padding: 15px;
+  text-align: center;
 }
 
 .logo img {
-    height: 50px;
+  max-width: 150px;
+  height: auto;
 }
 
-.dark-mode-toggle {
-    background: #fff;
-    border: 1px solid #ccc;
-    padding: 8px 12px;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-/* Sections */
 section {
-    padding: 30px 20px;
-    max-width: 900px;
-    margin: auto;
+  padding: 30px;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+h2, h3 {
+  color: #d4af37;
+}
+
+ul {
+  padding-left: 20px;
 }
 
 .deposit-info {
-    text-align: center;
-    margin-top: 15px;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .deposit-info img {
-    width: 160px;
-    margin-bottom: 10px;
+  max-width: 180px;
+  margin: 10px 0;
 }
 
-.roi-calculator input {
-    padding: 10px;
-    width: 60%;
-    margin-right: 10px;
+input[type="number"] {
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 300px;
 }
 
-.roi-calculator button {
-    padding: 10px 15px;
-    background-color: #d4af37;
-    color: #fff;
-    border: none;
-    cursor: pointer;
+button {
+  background-color: #d4af37;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #b48b2e;
 }
 
 .testimonial {
-    border: 1px solid #ddd;
-    padding: 20px;
-    margin: 10px 0;
-    text-align: center;
+  background-color: #fff2cc;
+  padding: 15px;
+  margin: 15px 0;
+  border-left: 4px solid #d4af37;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .testimonial img {
-    height: 30px;
-    margin-bottom: 10px;
+  width: 50px;
+  height: auto;
 }
 
 .ssl-secured img {
-    height: 30px;
-    vertical-align: middle;
-    margin-left: 10px;
+  width: 100px;
+  margin-top: 10px;
 }
 
 footer {
-    background-color: #222;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+  background-color: #f2c744;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
 }
 
 footer ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
 
 footer a {
-    color: #d4af37;
-    text-decoration: none;
+  color: #000;
+  text-decoration: none;
 }
 
-/* Dark Mode */
-body.dark-mode {
-    background-color: #111;
-    color: #f5f5f5;
-}
-
-body.dark-mode header {
-    background-color: #333;
-}
-
-body.dark-mode .roi-calculator button,
-body.dark-mode .dark-mode-toggle {
-    background-color: #d4af37;
-    color: #000;
-}
-
-body.dark-mode footer {
-    background-color: #000;
-}
-
-body.dark-mode a {
-    color: #f5c842;
+footer a:hover {
+  text-decoration: underline;
 }
