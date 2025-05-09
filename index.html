@@ -1,161 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Secure Bitcoin investment platform. Invest confidently with guaranteed returns.">
-  <meta name="keywords" content="Bitcoin investment, secure investment, cryptocurrency, ROI calculator">
-  <meta name="author" content="Bitcoin Secure">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Bitcoin Secure - Invest with Confidence</title>
   <style>
-    :root {
-      --btc-gold: #f2a900;
-      --white: #ffffff;
-      --black: #121212;
-      --gray: #f4f4f4;
-    }
-
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: var(--white);
-      color: var(--black);
+      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      transition: background 0.3s, color 0.3s;
+      background-color: #111;
+      color: #f1c40f;
     }
 
-    body.dark-mode {
-      background-color: var(--black);
-      color: var(--white);
+    header, footer {
+      background-color: #000;
+      text-align: center;
+      padding: 20px;
     }
 
-    header {
-      background-color: var(--btc-gold);
-      padding: 15px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+    header img {
+      height: 50px;
     }
 
-    .logo img {
-      height: 40px;
-    }
-
-    .dark-toggle {
-      margin-right: 20px;
-      cursor: pointer;
-      font-weight: bold;
+    h2, h3 {
+      color: #f1c40f;
     }
 
     section {
       padding: 30px 20px;
-      border-bottom: 1px solid #ddd;
-    }
-
-    h2, h3 {
-      color: var(--btc-gold);
-    }
-
-    ul {
-      padding-left: 20px;
+      border-bottom: 1px solid #333;
     }
 
     .deposit-info img {
-      width: 150px;
+      max-width: 150px;
+    }
+
+    .testimonial, .recent-investor {
+      background-color: #222;
       margin: 10px 0;
+      padding: 10px;
+      border-left: 4px solid #f1c40f;
     }
 
-    .testimonial, .ssl-secured {
-      margin: 20px 0;
-    }
-
-    .testimonial img, .ssl-secured img {
-      width: 120px;
-      display: block;
-      margin-bottom: 8px;
-    }
-
-    .roi-calculator input {
-      padding: 8px;
-      width: 200px;
-      margin-right: 10px;
-    }
-
-    .roi-calculator button {
-      padding: 8px 15px;
-      background: var(--btc-gold);
-      border: none;
-      cursor: pointer;
-      color: var(--black);
-    }
-
-    footer {
-      background: var(--btc-gold);
-      padding: 15px;
-      text-align: center;
-      color: var(--black);
+    .testimonial img, .recent-investor img {
+      height: 20px;
+      vertical-align: middle;
+      margin-right: 8px;
     }
 
     footer ul {
       list-style: none;
       padding: 0;
-      margin-top: 10px;
       display: flex;
       justify-content: center;
-      gap: 20px;
+      gap: 15px;
     }
 
     footer a {
+      color: #f1c40f;
       text-decoration: none;
-      color: var(--black);
+    }
+
+    .roi-calculator input, .roi-calculator button {
+      padding: 8px;
+      margin-top: 5px;
+      font-size: 1em;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <div class="logo">
-      <img src="logo.png" alt="Bitcoin Secure Logo">
-    </div>
-    <div class="dark-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</div>
+    <img src="logo.png" alt="Bitcoin Secure Logo" />
   </header>
+
+  <section class="about-us">
+    <h2>About Us</h2>
+    <p>Bitcoin Secure is a blockchain-focused investment platform dedicated to providing safe and transparent returns. Our team combines tech expertise and financial knowledge to give you a solid crypto-investing experience.</p>
+  </section>
 
   <section class="how-to-invest">
     <h2>How to Invest</h2>
     <ul>
-      <li>1. Deposit a minimum of $1,000 in Bitcoin into the wallet address provided below.</li>
+      <li>1. Deposit a minimum of $1,000 in Bitcoin into the wallet address below.</li>
       <li>2. Use the QR code or the Bitcoin address for your deposit.</li>
-      <li>3. Wait for confirmation and start earning!</li>
+      <li>3. Wait for confirmation and start earning returns.</li>
     </ul>
     <div class="deposit-info">
-      <img src="btc-qr.png" alt="Bitcoin QR Code">
-      <p><strong>Bitcoin Address:</strong> 14pHyKsCXxw4mWiGwHkXyJsrtvUkMS2ucR</p>
+      <img src="btc-qr.png" alt="Bitcoin QR Code"/>
+      <p>Bitcoin Address: <strong>14pHyKsCXxw4mWiGwHkXyJsrtvUkMS2ucR</strong></p>
     </div>
   </section>
 
   <section class="roi-calculator">
     <h2>ROI Calculator</h2>
-    <p>Estimate your returns below:</p>
-    <input type="number" id="amount" placeholder="Enter amount in $">
-    <button onclick="calculateROI()">Calculate ROI</button>
+    <p>Enter your investment amount:</p>
+    <input type="number" id="investment" placeholder="USD Amount" />
+    <button onclick="calculateROI()">Calculate Return</button>
     <p id="result"></p>
+  </section>
+
+  <section class="recent-investors">
+    <h2>Recent Investors</h2>
+    <div class="recent-investor"><img src="trustpilot-logo.png" alt="Trustpilot" /> James K. just invested $2,000</div>
+    <div class="recent-investor"><img src="trustpilot-logo.png" alt="Trustpilot" /> Maria H. invested $3,500 and got paid back in 48 hours!</div>
   </section>
 
   <section class="what-investors-say">
     <h2>What Investors Are Saying</h2>
-    <div class="testimonial">
-      <img src="trustpilot-logo.png" alt="Trustpilot">
-      <p>"Excellent platform to invest in Bitcoin securely!"</p>
-    </div>
-    <div class="testimonial">
-      <img src="trustpilot-logo.png" alt="Trustpilot">
-      <p>"A trusted and reliable platform for Bitcoin investments."</p>
-    </div>
+    <div class="testimonial"><img src="trustpilot-logo.png" alt="Trustpilot Logo" /> "Secure and reliable! I doubled my BTC in 5 days."</div>
+    <div class="testimonial"><img src="trustpilot-logo.png" alt="Trustpilot Logo" /> "Super easy and smooth. Definitely recommend!"</div>
   </section>
 
   <section class="ssl-secured">
     <h3>Security Guaranteed</h3>
-    <p>Your transactions are protected with SSL encryption.</p>
-    <img src="ssl-secured.png" alt="SSL Secured">
+    <p>Your transactions are secured with SSL encryption. <img src="ssl-secured.png" alt="SSL Secured Badge"/></p>
   </section>
 
   <section class="contact-us">
@@ -167,40 +126,39 @@
   <footer>
     <p>&copy; 2025 Bitcoin Secure. All rights reserved.</p>
     <ul>
-      <li><a href="#">Terms</a></li>
-      <li><a href="#">Privacy</a></li>
-      <li><a href="#">Cookies</a></li>
+      <li><a href="#privacy">Privacy Policy</a></li>
+      <li><a href="#terms">Terms</a></li>
+      <li><a href="#disclaimer">Disclaimer</a></li>
     </ul>
   </footer>
 
-  <!-- ROI Calculator JS -->
+  <!-- Legal Sections -->
+  <section id="privacy">
+    <h2>Privacy Policy</h2>
+    <p>We do not share or sell your data. Your data is stored securely and only used to provide our services.</p>
+  </section>
+
+  <section id="terms">
+    <h2>Terms & Conditions</h2>
+    <p>All investments are voluntary and at your own risk. Returns are not guaranteed, and users must agree before proceeding.</p>
+  </section>
+
+  <section id="disclaimer">
+    <h2>Disclaimer</h2>
+    <p>This is not financial advice. Crypto markets are volatile. Invest wisely and only what you can afford to lose.</p>
+  </section>
+
   <script>
     function calculateROI() {
-      const amount = document.getElementById('amount').value;
-      if (!amount || amount <= 0) {
-        document.getElementById('result').innerText = "Please enter a valid amount.";
+      let amount = document.getElementById("investment").value;
+      if (!amount || isNaN(amount)) {
+        document.getElementById("result").innerText = "Please enter a valid amount.";
         return;
       }
-      const roi = amount * 1.2;
-      document.getElementById('result').innerText = `Estimated return after 30 days: $${roi.toFixed(2)}`;
-    }
-
-    function toggleDarkMode() {
-      document.body.classList.toggle("dark-mode");
+      let roi = amount * 1.5; // 50% return example
+      document.getElementById("result").innerText = "Expected Return: $" + roi.toFixed(2);
     }
   </script>
 
-  <!-- Tawk.to Chat -->
-  <script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-      s1.async=true;
-      s1.src='https://embed.tawk.to/681c8a48e6230a190d54a387/1iqnnoau9';
-      s1.charset='UTF-8';
-      s1.setAttribute('crossorigin','*');
-      s0.parentNode.insertBefore(s1,s0);
-    })();
-  </script>
 </body>
 </html>
