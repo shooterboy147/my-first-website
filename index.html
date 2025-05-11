@@ -3,116 +3,127 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>BitcoinSecure | Crypto Community & Investment Growth</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Bitcoin Secure - Invest & Learn</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f5f7fa;
-      color: #333;
       margin: 0;
-      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
+      color: #333;
     }
-
     header {
-      background-color: #0f172a;
+      background: #111;
       color: white;
-      padding: 2em 1em;
+      padding: 1rem;
       text-align: center;
     }
-
-    .logo {
-      width: 80px;
-      height: auto;
+    header img.logo {
+      max-width: 50px;
+      vertical-align: middle;
     }
-
-    h1 {
-      margin: 0.2em 0;
-    }
-
-    main {
-      padding: 2em 1em;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    section {
-      margin-bottom: 3em;
-    }
-
-    .btn {
-      display: inline-block;
-      background-color: #2563eb;
-      color: white;
-      padding: 0.8em 1.2em;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-    }
-
-    .badge {
-      width: 80px;
+    nav a {
       margin: 0 10px;
-    }
-
-    footer {
-      background-color: #1e293b;
-      color: white;
-      text-align: center;
-      padding: 2em 1em;
-    }
-
-    footer a {
-      color: #93c5fd;
-      margin: 0 5px;
+      color: #0f0;
       text-decoration: none;
+    }
+    main {
+      padding: 1rem;
+      max-width: 900px;
+      margin: auto;
+      background: white;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    .qr {
+      width: 200px;
+      margin-top: 1rem;
+    }
+    .badge {
+      height: 50px;
+      margin: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #111;
+      color: white;
+    }
+    input, button {
+      padding: 0.6rem;
+      font-size: 1rem;
+      margin: 0.3rem 0;
+    }
+    @media (max-width: 600px) {
+      .qr {
+        width: 100%;
+      }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="logo.png" alt="BitcoinSecure Logo" class="logo">
-    <h1>BitcoinSecure</h1>
-    <p>Crypto Learning | Community | Transparent Investing</p>
+    <img src="logo.png" class="logo" alt="Bitcoin Secure Logo" />
+    <h1>Bitcoin Secure</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#invest">How to Invest</a>
+      <a href="#blog">My Story</a>
+    </nav>
   </header>
 
   <main>
-
-    <section class="intro">
-      <h2>Welcome to BitcoinSecure</h2>
-      <p>We’re not just another crypto site. We’re a transparent community focused on helping you learn, grow, and succeed in the world of crypto and DeFi. Join us on this journey to build something real.</p>
+    <section id="about">
+      <h2>About Bitcoin Secure</h2>
+      <p>Bitcoin Secure is a platform built from experience, lessons, and hustle. We invest not just in coins, but in growth, knowledge, and people.</p>
     </section>
 
-    <section class="telegram">
-      <h2>Join Our Telegram Club</h2>
-      <p>Connect with others, follow our trading journey, and learn how to build real crypto skills in a supportive space.</p>
-      <a href="https://t.me/+AWa3z10XG0w4YTNk" class="btn" target="_blank">Join Our Telegram Group</a>
+    <section id="invest">
+      <h2>How to Invest</h2>
+      <ol>
+        <li>Deposit a minimum of <strong>$1,000</strong> worth of Bitcoin.</li>
+        <li>Scan the QR code or use the address below.</li>
+        <li>Wait for confirmation. Your ROI starts growing immediately.</li>
+      </ol>
+      <img src="btc-qr.png" alt="Bitcoin QR Code" class="qr" />
+      <p><strong>BTC Address:</strong> 1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa</p>
+
+      <h3>ROI Calculator</h3>
+      <input type="number" id="amount" placeholder="Enter amount in USD" />
+      <button onclick="calculateROI()">Calculate ROI</button>
+      <p id="result"></p>
     </section>
 
-    <section class="blog">
-      <h2>Latest Blog: My Journey So Far</h2>
-      <p>How I started, what I learned from my losses, and why this platform exists. No hype. Just truth.</p>
-      <a href="blog.html" class="btn">Read the Blog</a>
+    <section id="blog">
+      <h2>My Crypto Journey & Lessons</h2>
+      <p>I started hearing about Bitcoin back in 2015–2016 when I was just 11 or 12. I didn’t take it seriously then — I was focused on playing football and just being a kid.</p>
+      <p>It wasn’t until around 2019, when I was finishing secondary school, that I started hearing crypto-related terms more often. I became more familiar, but I still didn’t act on it.</p>
+      <p>In 2023, I began following some crypto accounts on Twitter. I didn’t understand them — just charts and numbers. It was overwhelming. Then in early 2024, I came across a tweet from <strong>Shola</strong> offering free crypto education through his Telegram group <strong>CryptoVishola</strong>.</p>
+      <p>That group changed everything. I learned how to trade, how to use signals, and how to read charts. I wasn’t perfect — I was still busy and didn’t practice enough. Eventually, I got <strong>liquidated</strong>.</p>
+      <p><strong>My biggest lesson:</strong> Don’t trade with emotions. After losing money, I panicked and tried to recover it instantly — and lost even more. I learned to be patient, to think clearly, and to analyze before jumping back in.</p>
+      <p>I created <strong>Bitcoin Secure</strong> to help others like me — people who are hungry to learn, grow, and win. I want to build a platform that motivates people, connects like-minds, and shows we can win legally through knowledge and smart strategy.</p>
+      <p>This is for anyone out there chasing a dream. You’re not alone.</p>
     </section>
-
-    <section class="invest">
-      <h2>Want to Invest?</h2>
-      <p><strong>Important:</strong> We only accept crypto from verified members in our Telegram group.</p>
-      <p><strong>Minimum investment:</strong> $50 in Bitcoin (BTC)</p>
-      <p>ROI details and wallet addresses are securely shared inside the community to avoid scams and protect members.</p>
-    </section>
-
   </main>
 
   <footer>
-    <img src="sslsecure.png" alt="SSL Secure" class="badge" />
-    <img src="trustpilotlogo.png" alt="TrustPilot" class="badge" />
-    <p>&copy; 2025 BitcoinSecure. All rights reserved.</p>
-    <a href="privacy.html">Privacy Policy</a> | 
-    <a href="terms.html">Terms</a> | 
-    <a href="disclaimer.html">Disclaimer</a>
+    <img src="trustpilot-logo.png" class="badge" alt="Trustpilot Badge" />
+    <img src="ssl-secured.png" class="badge" alt="SSL Secure" />
+    <p>&copy; 2025 Bitcoin Secure. All rights reserved.</p>
   </footer>
+
+  <script>
+    function calculateROI() {
+      const amount = document.getElementById("amount").value;
+      if (!amount || amount <= 0) {
+        document.getElementById("result").textContent = "Please enter a valid amount.";
+        return;
+      }
+      const roi = amount * 0.25;
+      document.getElementById("result").textContent = `Estimated ROI: $${roi.toFixed(2)}`;
+    }
+  </script>
 
 </body>
 </html>
