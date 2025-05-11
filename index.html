@@ -9,7 +9,7 @@
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
       background: #f4f4f4;
-      color: #333;
+      color: #333333; /* Dark Gray for a softer look */
     }
     header {
       background: #111;
@@ -54,6 +54,15 @@
       font-size: 1rem;
       margin: 0.3rem 0;
     }
+    h2 {
+      font-size: 24px; /* Heading size */
+      color: #111; /* Dark color for headings */
+    }
+    p {
+      font-size: 16px; /* Body text size */
+    }
+
+    /* Media Queries */
     @media (max-width: 600px) {
       .qr {
         width: 100%;
@@ -68,39 +77,32 @@
     <h1>Bitcoin Secure</h1>
     <nav>
       <a href="#about">About</a>
-      <a href="#blog">My Story</a>
+      <a href="#my-journey">My Crypto Journey</a>
+      <a href="#blog">Blog</a>
     </nav>
   </header>
 
   <main>
     <section id="about">
       <h2>About Bitcoin Secure</h2>
-      <p>Bitcoin Secure is a platform built from experience, lessons, and hustle. We focus on empowering people to learn, grow, and explore the world of cryptocurrency in a meaningful way.</p>
+      <p>Bitcoin Secure is a platform built from experience, lessons, and hustle. We invest not just in coins, but in growth, knowledge, and people.</p>
     </section>
 
-    <section id="blog">
-      <h2>My Crypto Journey & Lessons</h2>
-      <p>I started hearing about Bitcoin back in 2015–2016 when I was just 11 or 12. I didn’t take it seriously then — I was focused on playing football and just being a kid.</p>
-      <p>It wasn’t until around 2019, when I was finishing secondary school, that I started hearing crypto-related terms more often. I became more familiar, but I still didn’t act on it.</p>
-      <p>In 2023, I began following some crypto accounts on Twitter. I didn’t understand them — just charts and numbers. It was overwhelming. Then in early 2024, I came across a tweet from <strong>Shola</strong> offering free crypto education through his Telegram group <strong>CryptoVishola</strong>.</p>
+    <section id="my-journey">
+      <h2>My Crypto Journey</h2>
+      <p>It wasn't until around 2019, when I was finishing secondary school, that I started hearing crypto-related terms more often. I became more familiar, but I still didn’t act on it.</p>
+      <p>In 2023, I began following some crypto accounts on Twitter. I didn’t understand them — just charts and numbers. It was overwhelming. Then in early 2024, I came across a tweet from <strong>Shola</strong> offering free crypto education through his Telegram group <strong>CryptoWithShola</strong>.</p>
       <p>That group changed everything. I learned how to trade, how to use signals, and how to read charts. I wasn’t perfect — I was still busy and didn’t practice enough. Eventually, I got <strong>liquidated</strong>.</p>
       <p><strong>My biggest lesson:</strong> Don’t trade with emotions. After losing money, I panicked and tried to recover it instantly — and lost even more. I learned to be patient, to think clearly, and to analyze before jumping back in.</p>
-      <p>I created <strong>Bitcoin Secure</strong> to help others like me — people who are hungry to learn, grow, and win. I want to build a platform that motivates people, connects like-minds, and shows we can win legally through knowledge and smart strategy.</p>
+      <p>I created <strong>Bitcoin Secure</strong> to help others like me — people who are hungry to learn, grow, and win. I want to build a platform that motivates people, connects like-minded individuals, and shows we can win legally through knowledge and smart strategy.</p>
       <p>This is for anyone out there chasing a dream. You’re not alone.</p>
     </section>
 
-    <section id="support">
-      <h2>Support Bitcoin Secure</h2>
-      <p>If you find value in the educational content provided here, consider supporting the platform to help us grow. Your contributions help fund new lessons, content creation, and keep this platform running. Every little bit helps!</p>
-      <p><strong>Bitcoin Address:</strong> 14pHyKsCXxw4mWiGwHkXyJsrtvUkMS2ucR</p>
-      <img src="btc-qr.png" alt="Bitcoin QR Code" class="qr" />
-      <p>Thank you for your support! Your contribution is optional and greatly appreciated.</p>
-
-      <h3>ROI Calculator (Educational Tool)</h3>
-      <input type="number" id="amount" placeholder="Enter amount in USD" />
-      <button onclick="calculateROI()">Calculate ROI</button>
-      <p id="result"></p>
+    <section id="blog">
+      <h2>My Crypto Blog</h2>
+      <p>Read my thoughts, insights, and lessons about the world of cryptocurrency.</p>
     </section>
+
   </main>
 
   <footer>
@@ -108,18 +110,6 @@
     <img src="ssl-secured.png" class="badge" alt="SSL Secure" />
     <p>&copy; 2025 Bitcoin Secure. All rights reserved.</p>
   </footer>
-
-  <script>
-    function calculateROI() {
-      const amount = document.getElementById("amount").value;
-      if (!amount || amount <= 0) {
-        document.getElementById("result").textContent = "Please enter a valid amount.";
-        return;
-      }
-      const roi = amount * 0.25;
-      document.getElementById("result").textContent = `Estimated ROI: $${roi.toFixed(2)}`;
-    }
-  </script>
 
 </body>
 </html>
